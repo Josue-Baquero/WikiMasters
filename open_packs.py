@@ -20,6 +20,7 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 SITE = "https://www.wiki-masters.com"
 PROJECT_REF = "cyrxjeppjqsxxjayfrur"
@@ -147,7 +148,7 @@ def open_packs():
         status, data = http("POST", f"{SITE}/api/packs/open", headers)
         if isinstance(data, dict) and "cards" not in data and data.get("next_regen_at"):
             next_regen = datetime.fromisoformat(data["next_regen_at"].replace("Z", "+00:00"))
-            print(f"Plus de paquets. Prochain paquet a {next_regen.astimezone():%H:%M} (heure locale).")
+            print(f"Plus de paquets. Prochain paquet a {next_regen.astimezone(ZoneInfo('Europe/Paris')):%H:%M} (heure de Paris).")
             break
         if status != 200 or not isinstance(data, dict) or "cards" not in data:
             print(f"Arret : {status} {data}")
