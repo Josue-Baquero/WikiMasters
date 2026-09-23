@@ -68,6 +68,7 @@ PC,Love (album des Beatles),False,3400,3986,https://fr.wikipedia.org/wiki/Love_(
 PC,Manuel Le Lièvre,False,3059,1965,https://fr.wikipedia.org/wiki/Manuel_Le_Li%C3%A8vre
 PC,Mari Trini,False,3107,2048,https://fr.wikipedia.org/wiki/Mari_Trini
 PC,Marius Ernest Sabino,False,3225,4607,https://fr.wikipedia.org/wiki/Marius_Ernest_Sabino
+PC,Marussia B2,False,2760,2119,https://fr.wikipedia.org/wiki/Marussia_B2
 PC,Michel Lequenne,False,3324,3587,https://fr.wikipedia.org/wiki/Michel_Lequenne
 PC,Nathan Tella,False,3197,4104,https://fr.wikipedia.org/wiki/Nathan_Tella
 PC,Nédélec,False,3113,3986,https://fr.wikipedia.org/wiki/N%C3%A9d%C3%A9lec
@@ -116,9 +117,11 @@ C,Challenge Yves du Manoir 1964-1965,False,2002,3360,https://fr.wikipedia.org/wi
 C,Championnat de Belgique de football de deuxième division 2005-2006,False,1928,1711,https://fr.wikipedia.org/wiki/Championnat_de_Belgique_de_football_de_deuxi%C3%A8me_division_2005-2006
 C,Championnat de France féminin de kin-ball 2010-2011,False,1674,2203,https://fr.wikipedia.org/wiki/Championnat_de_France_f%C3%A9minin_de_kin-ball_2010-2011
 C,Championnat du Venezuela de football 2009-2010,False,1980,2627,https://fr.wikipedia.org/wiki/Championnat_du_Venezuela_de_football_2009-2010
+C,Channel VAS Championships 2016,False,1978,2457,https://fr.wikipedia.org/wiki/Channel_VAS_Championships_2016
 C,Chastel Hernault,False,1586,912,https://fr.wikipedia.org/wiki/Chastel_Hernault
 C,Chawton House,False,1989,4163,https://fr.wikipedia.org/wiki/Chawton_House
 C,Christal Clashing,False,1603,3239,https://fr.wikipedia.org/wiki/Christal_Clashing
+C,Chukwudiebere Maduabum,False,1652,1222,https://fr.wikipedia.org/wiki/Chukwudiebere_Maduabum
 C,Château de Beaumanoir,False,1333,578,https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Beaumanoir
 C,Château de Garengo,False,1810,3921,https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Garengo
 C,Clarence L. Cooper Jr,False,1839,2283,https://fr.wikipedia.org/wiki/Clarence_L._Cooper_Jr
@@ -152,6 +155,7 @@ C,Ivan Samoïlovytch,False,1584,2256,https://fr.wikipedia.org/wiki/Ivan_Samo%C3%
 C,Ivo Maček,False,1632,4352,https://fr.wikipedia.org/wiki/Ivo_Ma%C4%8Dek
 C,Jacky Mamou,False,1676,1412,https://fr.wikipedia.org/wiki/Jacky_Mamou
 C,Jacques Estienne (homonymie),False,1579,3985,https://fr.wikipedia.org/wiki/Jacques_Estienne_(homonymie)
+C,Jean Jacoby (artiste),False,1825,4006,https://fr.wikipedia.org/wiki/Jean_Jacoby_(artiste)
 C,Jean-Jacques Keller (fondeur),False,1904,4336,https://fr.wikipedia.org/wiki/Jean-Jacques_Keller_(fondeur)
 C,Judith Jáuregui,False,1711,3790,https://fr.wikipedia.org/wiki/Judith_J%C3%A1uregui
 C,Kadjinolle,False,1225,115,https://fr.wikipedia.org/wiki/Kadjinolle
@@ -167,17 +171,21 @@ C,Lilly Stoffelsma,False,1604,4208,https://fr.wikipedia.org/wiki/Lilly_Stoffelsm
 C,Liste des cours d'eau du Soudan,False,1556,1535,https://fr.wikipedia.org/wiki/Liste_des_cours_d%27eau_du_Soudan
 C,Liste des diffuseurs des Jeux olympiques d'hiver de 2014,False,2118,4863,https://fr.wikipedia.org/wiki/Liste_des_diffuseurs_des_Jeux_olympiques_d%27hiver_de_2014
 C,Liste des gminy de Podlachie,False,2182,2055,https://fr.wikipedia.org/wiki/Liste_des_gminy_de_Podlachie
+C,Live at the Rainbow,False,1630,1142,https://fr.wikipedia.org/wiki/Live_at_the_Rainbow
 C,"Lomira (town, Wisconsin)",False,1468,3380,"https://fr.wikipedia.org/wiki/Lomira_(town,_Wisconsin)"
 C,Louis Bréchard,False,1912,3672,https://fr.wikipedia.org/wiki/Louis_Br%C3%A9chard
 C,Ludibrium,False,1484,617,https://fr.wikipedia.org/wiki/Ludibrium
 C,Luge aux Jeux olympiques de 1994,False,1663,1228,https://fr.wikipedia.org/wiki/Luge_aux_Jeux_olympiques_de_1994
 C,"Madame (film, 2019)",False,1694,3121,"https://fr.wikipedia.org/wiki/Madame_(film,_2019)"
+C,Magaly Gutiérrez,False,1745,1889,https://fr.wikipedia.org/wiki/Magaly_Guti%C3%A9rrez
 C,Maison des Trois Marchands,False,1893,3577,https://fr.wikipedia.org/wiki/Maison_des_Trois_Marchands
 C,Maison du Gouverneur (Huy),False,1860,3019,https://fr.wikipedia.org/wiki/Maison_du_Gouverneur_(Huy)
 C,Marco Crimi,False,1901,3224,https://fr.wikipedia.org/wiki/Marco_Crimi
 C,Martigné (homonymie),False,1437,1083,https://fr.wikipedia.org/wiki/Martign%C3%A9_(homonymie)
 C,Martin Kellerman,False,1610,1930,https://fr.wikipedia.org/wiki/Martin_Kellerman
+C,Matilde Ponce Copado,False,1785,4161,https://fr.wikipedia.org/wiki/Matilde_Ponce_Copado
 C,Mazzè,False,1685,4053,https://fr.wikipedia.org/wiki/Mazz%C3%A8
+C,Mały Las,False,1729,1550,https://fr.wikipedia.org/wiki/Ma%C5%82y_Las
 C,Meedhuizen,False,1649,2065,https://fr.wikipedia.org/wiki/Meedhuizen
 C,Meilleur arbitre de l'année de Serie A,False,1716,986,https://fr.wikipedia.org/wiki/Meilleur_arbitre_de_l%27ann%C3%A9e_de_Serie_A
 C,Melanophryniscus simplex,False,1779,3437,https://fr.wikipedia.org/wiki/Melanophryniscus_simplex
@@ -224,6 +232,7 @@ C,Rue Hemricourt,False,1804,3164,https://fr.wikipedia.org/wiki/Rue_Hemricourt
 C,Ryan Johnston,False,1893,2680,https://fr.wikipedia.org/wiki/Ryan_Johnston
 C,Région des Ilocos,False,1626,2156,https://fr.wikipedia.org/wiki/R%C3%A9gion_des_Ilocos
 C,Saving Face,False,1553,899,https://fr.wikipedia.org/wiki/Saving_Face
+C,Schloßböckelheim,False,1600,1807,https://fr.wikipedia.org/wiki/Schlo%C3%9Fb%C3%B6ckelheim
 C,Scytodes maresi,False,1698,4490,https://fr.wikipedia.org/wiki/Scytodes_maresi
 C,Septième arrondissement électoral du Nord (Douai) de 1821 à 1830,False,1751,3285,https://fr.wikipedia.org/wiki/Septi%C3%A8me_arrondissement_%C3%A9lectoral_du_Nord_(Douai)_de_1821_%C3%A0_1830
 C,Shiromine-ji,False,1786,4511,https://fr.wikipedia.org/wiki/Shiromine-ji
@@ -261,6 +270,7 @@ C,Yūko Mori,False,2090,5239,https://fr.wikipedia.org/wiki/Y%C5%ABko_Mori
 C,Zaboukh,False,1928,4389,https://fr.wikipedia.org/wiki/Zaboukh
 C,Zambanèga (Tanghin-Dassouri),False,1745,3780,https://fr.wikipedia.org/wiki/Zamban%C3%A8ga_(Tanghin-Dassouri)
 C,Zeria schweinfurthi,False,1684,3066,https://fr.wikipedia.org/wiki/Zeria_schweinfurthi
+C,Zina Sadawol,False,1633,3205,https://fr.wikipedia.org/wiki/Zina_Sadawol
 C,"Ágios Geórgios (Armenádes, Corfou)",False,1524,3043,"https://fr.wikipedia.org/wiki/%C3%81gios_Ge%C3%B3rgios_(Armen%C3%A1des,_Corfou)"
 C,Ère Gentoku,False,1769,2989,https://fr.wikipedia.org/wiki/%C3%88re_Gentoku
 C,Édouard Gérard,False,1571,4375,https://fr.wikipedia.org/wiki/%C3%89douard_G%C3%A9rard
