@@ -212,17 +212,17 @@ def rarity_orders(anon_key, access_token):
 def export_collection(anon_key, session_data):
     # Exporte toute la collection du compte (y compris les cartes obtenues hors script).
     token, user_id = session_data["access_token"], session_data["user"]["id"]
-    fields = "wikipedia_title,rarity,rarity_order,atk,def,wikipedia_url"
+    fields = "id,wikipedia_title,rarity,rarity_order,atk,def,wikipedia_url,summary,image_url,hide_image,nsfw_image"
     status, rows = supabase_get_all(f"user_cards?select=card_id,is_shiny,cards({fields})"
                                     f"&user_id=eq.{user_id}&order=id", anon_key, token)
     if status != 200:
         print(f"Export de la collection impossible ({status}) : {rows}")
-        return None
+        return None, None
+    owned = [{**(r.get("cards") or {}), "is_shiny": r.get("is_shiny")} for r in rows]
     cards = []
-    for r in rows:
-        c = r.get("cards") or {}
+    for c in owned:
         cards.append({"titre": c.get("wikipedia_title"), "rarete": c.get("rarity"),
-                      "rarity_order": c.get("rarity_order") or 0, "shiny": r.get("is_shiny"),
+                      "rarity_order": c.get("rarity_order") or 0, "shiny": c.get("is_shiny"),
                       "atk": c.get("atk"), "def": c.get("def"), "url": c.get("wikipedia_url")})
     cards.sort(key=lambda c: (-c["rarity_order"], c["titre"] or ""))
     with COLLECTION_FILE.open("w", newline="", encoding="utf-8") as f:
@@ -236,7 +236,7 @@ def export_collection(anon_key, session_data):
     detail = ", ".join(f"{n} {r}" for r, n in sorted(counts.items(), key=lambda x: -x[1]))
     line = f"Collection : {len(cards)} cartes ({detail})."
     print(line)
-    return line
+    return line, owned
 
 
 def write_summary(opened_cards, status_line):
@@ -311,11 +311,39 @@ def cards_at_least(cards, min_rarity, orders):
     return sorted(rares, key=lambda c: -(c.get("rarity_order") or 0))
 
 
-def notify_cards(cards, collection_line, orders):
+def external_rares(owned, opened, orders):
+    # Nouvelles cartes rares de la collection que le script n'a pas ouvertes lui-meme.
+    # On memorise le nombre d'exemplaires de chaque carte rare (etat conserve entre les runs).
+    min_order = min(orders.get(PRIVATE_MIN_RARITY, 99), orders.get(PUBLIC_MIN_RARITY, 99))
+    current = {}
+    by_id = {}
+    for c in owned:
+        if (c.get("rarity_order") or 0) >= min_order:
+            current[c["id"]] = current.get(c["id"], 0) + 1
+            by_id[c["id"]] = c
+    opened_counts = {}
+    for c in opened:
+        opened_counts[c["id"]] = opened_counts.get(c["id"], 0) + 1
+    state = load_state()
+    previous = state.get("rare_counts")
+    state["rare_counts"] = current
+    STATE_FILE.write_text(json.dumps(state))
+    if previous is None:  # premier run : on prend juste la photo de la collection
+        return []
+    new = []
+    for card_id, n in current.items():
+        extra = n - previous.get(card_id, 0) - opened_counts.get(card_id, 0)
+        new += [by_id[card_id]] * max(extra, 0)
+    return new
+
+
+def notify_cards(cards, collection_line, orders, external=False):
+    # external : cartes obtenues hors script (paquet ouvert a la main, echange, marche).
+    origin = " hors script (a la main, echange ou marche)" if external else ""
     # Salon prive du compte : SR et plus par defaut.
     rares = cards_at_least(cards, PRIVATE_MIN_RARITY, orders)
     if rares:
-        content = f"🎴 **{ACCOUNT_NAME} : {len(rares)} carte(s) {PRIVATE_MIN_RARITY}+ obtenue(s) !**"
+        content = f"🎴 **{ACCOUNT_NAME} : {len(rares)} carte(s) {PRIVATE_MIN_RARITY}+ obtenue(s){origin} !**"
         if collection_line:
             content += f"\n{collection_line}"
         private_post({"content": content, "embeds": [card_embed(c) for c in rares[:10]]})
@@ -324,7 +352,8 @@ def notify_cards(cards, collection_line, orders):
     if rares:
         who = f"<@{DISCORD_USER_ID}>" if DISCORD_USER_ID else f"**{ACCOUNT_NAME}**"
         # allowed_mentions vide : affiche la mention sans pinger (la notif arrive deja en prive).
-        discord_post(PUBLIC_WEBHOOK, {"content": f"🌟 {who} a tire {len(rares)} carte(s) {PUBLIC_MIN_RARITY}+ !",
+        verb = "a obtenu" if external else "a tire"
+        discord_post(PUBLIC_WEBHOOK, {"content": f"🌟 {who} {verb} {len(rares)} carte(s) {PUBLIC_MIN_RARITY}+ !",
                                       "embeds": [card_embed(c) for c in rares[:10]],
                                       "allowed_mentions": {"parse": []}})
 
@@ -390,11 +419,16 @@ def open_packs():
             break
         time.sleep(1.5)
     print(f"{opened} paquet(s) ouvert(s).")
-    collection_line = export_collection(sess["anon_key"], session_data)
+    collection_line, owned = export_collection(sess["anon_key"], session_data)
     if collection_line:
         status_line += "\n\n" + collection_line
     write_summary(opened_cards, status_line)
     notify_cards([c for _, c in opened_cards], collection_line, orders)
+    if owned is not None:
+        external = external_rares(owned, [c for _, c in opened_cards], orders)
+        if external:
+            print(f"{len(external)} carte(s) rare(s) obtenue(s) hors script.")
+            notify_cards(external, collection_line, orders, external=True)
     maybe_send_daily_summary(collection_line)
 
 
