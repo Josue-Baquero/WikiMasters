@@ -317,8 +317,10 @@ def notify_cards(cards, collection_line, orders):
     rares = cards_at_least(cards, PUBLIC_MIN_RARITY, orders)
     if rares:
         who = f"<@{DISCORD_USER_ID}>" if DISCORD_USER_ID else f"**{ACCOUNT_NAME}**"
+        # allowed_mentions vide : affiche la mention sans pinger (la notif arrive deja en prive).
         discord_post(PUBLIC_WEBHOOK, {"content": f"🌟 {who} a tire {len(rares)} carte(s) {PUBLIC_MIN_RARITY}+ !",
-                                      "embeds": [card_embed(c) for c in rares[:10]]})
+                                      "embeds": [card_embed(c) for c in rares[:10]],
+                                      "allowed_mentions": {"parse": []}})
 
 
 def fail(message):

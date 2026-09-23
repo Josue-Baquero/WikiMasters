@@ -4,6 +4,6 @@
     "slug": "josue",
     "token_secret": "WM_REFRESH_TOKEN",
     "private_webhook_secret": "DISCORD_WEBHOOK_JOSUE",
-    "discord_user_id": ""
+    "discord_user_id": "413648663932305408"
   }
 ]
