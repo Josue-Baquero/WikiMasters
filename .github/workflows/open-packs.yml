@@ -57,8 +57,9 @@ jobs:
       - name: Recuperer l'historique des cartes
         run: |
           if git fetch -q origin data 2>/dev/null; then
-            git show "origin/data:cards_log_${ACCOUNT_SLUG}.csv" > "cards_log_${ACCOUNT_SLUG}.csv" 2>/dev/null \
-              || rm -f "cards_log_${ACCOUNT_SLUG}.csv"
+            for f in "cards_log_${ACCOUNT_SLUG}.csv" "state_${ACCOUNT_SLUG}.json"; do
+              git show "origin/data:$f" > "$f" 2>/dev/null || rm -f "$f"
+            done
           fi
 
       # Chaque compte ne recoit que ses propres secrets.
@@ -74,11 +75,12 @@ jobs:
           DISCORD_WEBHOOK_PRIVATE: ${{ secrets[matrix.account.private_webhook_secret] }}
           DISCORD_PUBLIC_MIN_RARITY: ${{ vars.DISCORD_PUBLIC_MIN_RARITY }}
           DISCORD_PRIVATE_MIN_RARITY: ${{ vars.DISCORD_PRIVATE_MIN_RARITY }}
+          DAILY_SUMMARY_HOUR: ${{ vars.DAILY_SUMMARY_HOUR }}
         run: python open_packs.py ${{ inputs.test_discord && 'test-discord' || '' }}
 
       - name: Sauvegarder l'historique sur la branche data
         run: |
-          files=$(ls "cards_log_${ACCOUNT_SLUG}.csv" "collection_${ACCOUNT_SLUG}.csv" 2>/dev/null || true)
+          files=$(ls "cards_log_${ACCOUNT_SLUG}.csv" "collection_${ACCOUNT_SLUG}.csv" "state_${ACCOUNT_SLUG}.json" 2>/dev/null || true)
           [ -n "$files" ] || exit 0
           cp $files "$RUNNER_TEMP/"
           git config user.name "github-actions[bot]"
