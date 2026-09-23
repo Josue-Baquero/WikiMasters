@@ -21,6 +21,7 @@ R,Mireille Havet,False,5139,4352,https://fr.wikipedia.org/wiki/Mireille_Havet
 R,Nicolas Cadène,False,5319,6479,https://fr.wikipedia.org/wiki/Nicolas_Cad%C3%A8ne
 R,Quena,False,5941,8100,https://fr.wikipedia.org/wiki/Quena
 R,Saint-Jean-d'Arvey,False,5322,6703,https://fr.wikipedia.org/wiki/Saint-Jean-d%27Arvey
+R,Sandbox (sécurité informatique),False,4498,2563,https://fr.wikipedia.org/wiki/Sandbox_(s%C3%A9curit%C3%A9_informatique)
 R,Sifaka,False,5968,8424,https://fr.wikipedia.org/wiki/Sifaka
 R,Thou,False,3968,4352,https://fr.wikipedia.org/wiki/Thou
 R,Éditions Stock,False,4891,4390,https://fr.wikipedia.org/wiki/%C3%89ditions_Stock
@@ -52,6 +53,7 @@ PC,Liste des pièces commémoratives de 2 euros de 2011,False,3448,5706,https://
 PC,Love (album des Beatles),False,3400,3986,https://fr.wikipedia.org/wiki/Love_(album_des_Beatles)
 PC,Mari Trini,False,3107,2048,https://fr.wikipedia.org/wiki/Mari_Trini
 PC,Marius Ernest Sabino,False,3225,4607,https://fr.wikipedia.org/wiki/Marius_Ernest_Sabino
+PC,Michel Lequenne,False,3324,3587,https://fr.wikipedia.org/wiki/Michel_Lequenne
 PC,Nathan Tella,False,3197,4104,https://fr.wikipedia.org/wiki/Nathan_Tella
 PC,Nédélec,False,3113,3986,https://fr.wikipedia.org/wiki/N%C3%A9d%C3%A9lec
 PC,Octavien de Quingey,False,2903,2280,https://fr.wikipedia.org/wiki/Octavien_de_Quingey
@@ -94,20 +96,27 @@ C,Challenge Yves du Manoir 1964-1965,False,2002,3360,https://fr.wikipedia.org/wi
 C,Championnat de Belgique de football de deuxième division 2005-2006,False,1928,1711,https://fr.wikipedia.org/wiki/Championnat_de_Belgique_de_football_de_deuxi%C3%A8me_division_2005-2006
 C,Championnat de France féminin de kin-ball 2010-2011,False,1674,2203,https://fr.wikipedia.org/wiki/Championnat_de_France_f%C3%A9minin_de_kin-ball_2010-2011
 C,Championnat du Venezuela de football 2009-2010,False,1980,2627,https://fr.wikipedia.org/wiki/Championnat_du_Venezuela_de_football_2009-2010
+C,Chastel Hernault,False,1586,912,https://fr.wikipedia.org/wiki/Chastel_Hernault
+C,Château de Beaumanoir,False,1333,578,https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Beaumanoir
 C,Château de Garengo,False,1810,3921,https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Garengo
+C,Clarence L. Cooper Jr,False,1839,2283,https://fr.wikipedia.org/wiki/Clarence_L._Cooper_Jr
 C,Colombier de Maros,False,1698,3576,https://fr.wikipedia.org/wiki/Colombier_de_Maros
 C,Conseiller militaire,False,1547,1385,https://fr.wikipedia.org/wiki/Conseiller_militaire
 C,Cricri,False,1304,144,https://fr.wikipedia.org/wiki/Cricri
 C,District de Murtal,False,1579,2176,https://fr.wikipedia.org/wiki/District_de_Murtal
+C,Dème de Néa Filadélfia-Néa Chalkidóna,False,1552,2766,https://fr.wikipedia.org/wiki/D%C3%A8me_de_N%C3%A9a_Filad%C3%A9lfia-N%C3%A9a_Chalkid%C3%B3na
 C,"Eric Williams (basket-ball, 1972)",False,1772,1425,"https://fr.wikipedia.org/wiki/Eric_Williams_(basket-ball,_1972)"
 C,Evgeny Matveev,False,2039,3133,https://fr.wikipedia.org/wiki/Evgeny_Matveev
 C,Famille de paysans de Kahlenberg,False,1619,343,https://fr.wikipedia.org/wiki/Famille_de_paysans_de_Kahlenberg
 C,Fernand Thévenet,False,2021,5189,https://fr.wikipedia.org/wiki/Fernand_Th%C3%A9venet
 C,Fondation vaudoise pour la culture,False,2090,3938,https://fr.wikipedia.org/wiki/Fondation_vaudoise_pour_la_culture
 C,Fran Warren,False,1918,4101,https://fr.wikipedia.org/wiki/Fran_Warren
+C,Francisco Fuentes,False,1546,1281,https://fr.wikipedia.org/wiki/Francisco_Fuentes
 C,Fritz Husemann,False,1901,4413,https://fr.wikipedia.org/wiki/Fritz_Husemann
 C,Georg Bottmann,False,1744,3019,https://fr.wikipedia.org/wiki/Georg_Bottmann
 C,George Hastings,False,1659,3375,https://fr.wikipedia.org/wiki/George_Hastings
+C,Guillaume Douceret,False,1518,2892,https://fr.wikipedia.org/wiki/Guillaume_Douceret
+C,Hendrich Jordan,False,1814,1661,https://fr.wikipedia.org/wiki/Hendrich_Jordan
 C,Institut néerlandais de l'image et du son,False,1738,2116,https://fr.wikipedia.org/wiki/Institut_n%C3%A9erlandais_de_l%27image_et_du_son
 C,Isabella Beecher Hooker,False,2172,6217,https://fr.wikipedia.org/wiki/Isabella_Beecher_Hooker
 C,Ivan Samoïlovytch,False,1584,2256,https://fr.wikipedia.org/wiki/Ivan_Samo%C3%AFlovytch
@@ -115,6 +124,7 @@ C,Ivo Maček,False,1632,4352,https://fr.wikipedia.org/wiki/Ivo_Ma%C4%8Dek
 C,Jacques Estienne (homonymie),False,1579,3985,https://fr.wikipedia.org/wiki/Jacques_Estienne_(homonymie)
 C,Jean-Jacques Keller (fondeur),False,1904,4336,https://fr.wikipedia.org/wiki/Jean-Jacques_Keller_(fondeur)
 C,Judith Jáuregui,False,1711,3790,https://fr.wikipedia.org/wiki/Judith_J%C3%A1uregui
+C,Kadjinolle,False,1225,115,https://fr.wikipedia.org/wiki/Kadjinolle
 C,Kahina (groupe),False,1881,4871,https://fr.wikipedia.org/wiki/Kahina_(groupe)
 C,Kindattu,False,1615,4209,https://fr.wikipedia.org/wiki/Kindattu
 C,Kyjov (district de Žďár nad Sázavou),False,1760,3705,https://fr.wikipedia.org/wiki/Kyjov_(district_de_%C5%BD%C4%8F%C3%A1r_nad_S%C3%A1zavou)
