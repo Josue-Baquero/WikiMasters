@@ -80,9 +80,15 @@ def load_session():
 
 def save_session(sess):
     if os.environ.get("GITHUB_ACTIONS"):
+        # Masque le nouveau token dans les logs (le depot est public).
+        print(f"::add-mask::{sess['refresh_token']}", flush=True)
         # Le refresh token est a usage unique : on met a jour le secret pour le prochain run.
-        subprocess.run(["gh", "secret", "set", "WM_REFRESH_TOKEN", "--body", sess["refresh_token"]],
-                       check=True, capture_output=True)
+        # Passe par stdin pour que le token n'apparaisse jamais dans une trace d'erreur.
+        r = subprocess.run(["gh", "secret", "set", "WM_REFRESH_TOKEN"], input=sess["refresh_token"],
+                           text=True, capture_output=True)
+        if r.returncode != 0:
+            sys.exit("Impossible de mettre a jour le secret WM_REFRESH_TOKEN "
+                     "(verifie que GH_PAT a la permission Secrets: Read and write sur ce depot).")
     else:
         SESSION_FILE.write_text(json.dumps(sess))
 
