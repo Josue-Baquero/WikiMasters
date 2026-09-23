@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Josue",
+    "slug": "josue",
+    "token_secret": "WM_REFRESH_TOKEN",
+    "private_webhook_secret": "DISCORD_WEBHOOK_JOSUE",
+    "discord_user_id": ""
+  }
+]

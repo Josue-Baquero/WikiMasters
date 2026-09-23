@@ -1,5 +1,5 @@
 session.json
-cards_log.csv
 *.har
 __pycache__/
-collection.csv
+cards_log*.csv
+collection*.csv

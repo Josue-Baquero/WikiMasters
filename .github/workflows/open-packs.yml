@@ -19,9 +19,35 @@ permissions:
   actions: write    # garder le workflow actif (keepalive)
 
 jobs:
+  accounts:
+    runs-on: ubuntu-latest
+    outputs:
+      list: ${{ steps.list.outputs.list }}
+    steps:
+      - uses: actions/checkout@v7
+      - id: list
+        run: echo "list=$(jq -c . accounts.json)" >> "$GITHUB_OUTPUT"
+
+      # GitHub desactive les workflows programmes apres 60 jours sans activite sur un
+      # depot public ; re-activer le workflow remet ce compteur a zero.
+      - name: Garder le workflow actif
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/open-packs.yml/enable"
+
   open:
+    needs: accounts
+    name: ${{ matrix.account.name }}
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    strategy:
+      fail-fast: false
+      max-parallel: 1   # un compte a la fois (pushs sur la branche data)
+      matrix:
+        account: ${{ fromJSON(needs.accounts.outputs.list) }}
+    env:
+      ACCOUNT_NAME: ${{ matrix.account.name }}
+      ACCOUNT_SLUG: ${{ matrix.account.slug }}
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
@@ -31,25 +57,33 @@ jobs:
       - name: Recuperer l'historique des cartes
         run: |
           if git fetch -q origin data 2>/dev/null; then
-            git show origin/data:cards_log.csv > cards_log.csv
+            git show "origin/data:cards_log_${ACCOUNT_SLUG}.csv" > "cards_log_${ACCOUNT_SLUG}.csv" 2>/dev/null \
+              || rm -f "cards_log_${ACCOUNT_SLUG}.csv"
           fi
 
+      # Chaque compte ne recoit que ses propres secrets.
       - name: Ouvrir les paquets
         env:
-          WM_REFRESH_TOKEN: ${{ secrets.WM_REFRESH_TOKEN }}
+          TOKEN_SECRET: ${{ matrix.account.token_secret }}
+          WM_REFRESH_TOKEN: ${{ secrets[matrix.account.token_secret] }}
           WM_ANON_KEY: ${{ secrets.WM_ANON_KEY }}
           GH_TOKEN: ${{ secrets.GH_PAT }}
+          DISCORD_USER_ID: ${{ matrix.account.discord_user_id }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-          DISCORD_MIN_RARITY: ${{ vars.DISCORD_MIN_RARITY }}
+          DISCORD_WEBHOOK_PRIVATE: ${{ secrets[matrix.account.private_webhook_secret] }}
+          DISCORD_PUBLIC_MIN_RARITY: ${{ vars.DISCORD_PUBLIC_MIN_RARITY }}
+          DISCORD_PRIVATE_MIN_RARITY: ${{ vars.DISCORD_PRIVATE_MIN_RARITY }}
         run: python open_packs.py ${{ inputs.test_discord && 'test-discord' || '' }}
 
       - name: Sauvegarder l'historique sur la branche data
         run: |
-          files=$(ls cards_log.csv collection.csv 2>/dev/null || true)
+          files=$(ls "cards_log_${ACCOUNT_SLUG}.csv" "collection_${ACCOUNT_SLUG}.csv" 2>/dev/null || true)
           [ -n "$files" ] || exit 0
           cp $files "$RUNNER_TEMP/"
           git config user.name "github-actions[bot]"
           git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git fetch -q origin data 2>/dev/null || true
           if git rev-parse -q --verify origin/data >/dev/null; then
             git checkout -q -f -B data origin/data
           else
@@ -59,14 +93,6 @@ jobs:
           for f in $files; do cp "$RUNNER_TEMP/$f" "$f"; done
           git add -f $files
           if ! git diff --cached --quiet; then
-            git commit -qm "Mise a jour des cartes"
+            git commit -qm "Mise a jour des cartes de ${ACCOUNT_NAME}"
             git push -q origin data
           fi
-
-      # GitHub desactive les workflows programmes apres 60 jours sans activite sur un
-      # depot public ; re-activer le workflow remet ce compteur a zero.
-      - name: Garder le workflow actif
-        if: always()
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/open-packs.yml/enable"
