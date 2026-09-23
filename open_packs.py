@@ -125,7 +125,8 @@ def check_gh_secret_access():
     # Verifie les droits AVANT de consommer le refresh token (usage unique),
     # sinon un echec d'ecriture ferait perdre la session.
     if IN_ACTIONS:
-        set_gh_secret("WM_WRITE_CHECK", "ok")
+        # Valeur improbable : GitHub masque la valeur des secrets partout dans les logs.
+        set_gh_secret("WM_WRITE_CHECK", "wikimasters-write-check")
 
 
 def save_session(sess):
@@ -268,12 +269,14 @@ def bot_dm(payload):
                "User-Agent": "DiscordBot (https://github.com/Josue-Baquero/WikiMasters, 1.0)"}
     status, channel = http("POST", "https://discord.com/api/v10/users/@me/channels", headers,
                            {"recipient_id": DISCORD_USER_ID})
+    data = channel
     if status == 200:
         status, data = http("POST", f"https://discord.com/api/v10/channels/{channel['id']}/messages",
                             headers, payload)
         if status == 200:
             return True
-    print(f"DM Discord echoue ({status}) : bot absent du serveur ou DM bloques ?")
+    detail = data.get("message") if isinstance(data, dict) else data
+    print(f"DM Discord echoue ({status}) : {detail} (bot absent du serveur ou DM bloques ?)")
     return False
 
 
