@@ -9,6 +9,7 @@ R,Aire de Wernicke,False,4000,4352,https://fr.wikipedia.org/wiki/Aire_de_Wernick
 R,Green Lantern (série télévisée d'animation),False,5017,4498,https://fr.wikipedia.org/wiki/Green_Lantern_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e_d%27animation)
 R,Histoire de la culture de l'hévéa,False,5819,7318,https://fr.wikipedia.org/wiki/Histoire_de_la_culture_de_l%27h%C3%A9v%C3%A9a
 R,Kazunari Ninomiya,False,4885,2906,https://fr.wikipedia.org/wiki/Kazunari_Ninomiya
+R,Ketouba,False,4809,5418,https://fr.wikipedia.org/wiki/Ketouba
 R,Le Protecteur (série télévisée),False,4771,3154,https://fr.wikipedia.org/wiki/Le_Protecteur_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)
 R,Mireille Havet,False,5139,4352,https://fr.wikipedia.org/wiki/Mireille_Havet
 R,Nicolas Cadène,False,5319,6479,https://fr.wikipedia.org/wiki/Nicolas_Cad%C3%A8ne
@@ -36,10 +37,12 @@ PC,Nathan Tella,False,3197,4104,https://fr.wikipedia.org/wiki/Nathan_Tella
 PC,Nédélec,False,3113,3986,https://fr.wikipedia.org/wiki/N%C3%A9d%C3%A9lec
 PC,Spathiphyllum floribundum,False,2548,996,https://fr.wikipedia.org/wiki/Spathiphyllum_floribundum
 PC,Supermatou,False,3136,3823,https://fr.wikipedia.org/wiki/Supermatou
+PC,Vallée du Moudang,False,3029,3622,https://fr.wikipedia.org/wiki/Vall%C3%A9e_du_Moudang
 PC,Vieillespesse,False,3567,6815,https://fr.wikipedia.org/wiki/Vieillespesse
 PC,Zatoka,False,3067,4389,https://fr.wikipedia.org/wiki/Zatoka
 C,(26363) 1999 AG6,False,1817,4741,https://fr.wikipedia.org/wiki/(26363)_1999_AG6
 C,(27749) Tsukadaken,False,1861,4846,https://fr.wikipedia.org/wiki/(27749)_Tsukadaken
+C,(305287) Olegyankov,False,1761,4567,https://fr.wikipedia.org/wiki/(305287)_Olegyankov
 C,1968 en philosophie,False,1697,2623,https://fr.wikipedia.org/wiki/1968_en_philosophie
 C,Aden Meinel,False,1863,1990,https://fr.wikipedia.org/wiki/Aden_Meinel
 C,Administration photo-cinématographique panukrainienne,False,1899,3204,https://fr.wikipedia.org/wiki/Administration_photo-cin%C3%A9matographique_panukrainienne
@@ -47,6 +50,7 @@ C,Altoufievski,False,1841,2295,https://fr.wikipedia.org/wiki/Altoufievski
 C,Ambassade de France au Suriname,False,2006,5031,https://fr.wikipedia.org/wiki/Ambassade_de_France_au_Suriname
 C,Antoine de Laincel,False,1771,4343,https://fr.wikipedia.org/wiki/Antoine_de_Laincel
 C,Austrian Business Agency,False,1893,2831,https://fr.wikipedia.org/wiki/Austrian_Business_Agency
+C,Avre,False,1826,1276,https://fr.wikipedia.org/wiki/Avre
 C,Becky Smith,False,1709,2153,https://fr.wikipedia.org/wiki/Becky_Smith
 C,Bernard Dupraz,False,1732,3948,https://fr.wikipedia.org/wiki/Bernard_Dupraz
 C,Canford Cliffs,False,1995,2329,https://fr.wikipedia.org/wiki/Canford_Cliffs
@@ -55,6 +59,7 @@ C,Caserne Bridoux,False,1878,5148,https://fr.wikipedia.org/wiki/Caserne_Bridoux
 C,Championnat de Belgique de football de deuxième division 2005-2006,False,1928,1711,https://fr.wikipedia.org/wiki/Championnat_de_Belgique_de_football_de_deuxi%C3%A8me_division_2005-2006
 C,Championnat de France féminin de kin-ball 2010-2011,False,1674,2203,https://fr.wikipedia.org/wiki/Championnat_de_France_f%C3%A9minin_de_kin-ball_2010-2011
 C,Château de Garengo,False,1810,3921,https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Garengo
+C,Colombier de Maros,False,1698,3576,https://fr.wikipedia.org/wiki/Colombier_de_Maros
 C,Conseiller militaire,False,1547,1385,https://fr.wikipedia.org/wiki/Conseiller_militaire
 C,Cricri,False,1304,144,https://fr.wikipedia.org/wiki/Cricri
 C,"Eric Williams (basket-ball, 1972)",False,1772,1425,"https://fr.wikipedia.org/wiki/Eric_Williams_(basket-ball,_1972)"
@@ -70,6 +75,8 @@ C,Ivan Samoïlovytch,False,1584,2256,https://fr.wikipedia.org/wiki/Ivan_Samo%C3%
 C,Jacques Estienne (homonymie),False,1579,3985,https://fr.wikipedia.org/wiki/Jacques_Estienne_(homonymie)
 C,Jean-Jacques Keller (fondeur),False,1904,4336,https://fr.wikipedia.org/wiki/Jean-Jacques_Keller_(fondeur)
 C,Judith Jáuregui,False,1711,3790,https://fr.wikipedia.org/wiki/Judith_J%C3%A1uregui
+C,Kahina (groupe),False,1881,4871,https://fr.wikipedia.org/wiki/Kahina_(groupe)
+C,Kindattu,False,1615,4209,https://fr.wikipedia.org/wiki/Kindattu
 C,Kyjov (district de Žďár nad Sázavou),False,1760,3705,https://fr.wikipedia.org/wiki/Kyjov_(district_de_%C5%BD%C4%8F%C3%A1r_nad_S%C3%A1zavou)
 C,Le Lac (film),False,1660,1156,https://fr.wikipedia.org/wiki/Le_Lac_(film)
 C,Liste des cours d'eau du Soudan,False,1556,1535,https://fr.wikipedia.org/wiki/Liste_des_cours_d%27eau_du_Soudan
@@ -90,6 +97,7 @@ C,Newton S. Grimwood,False,1654,4117,https://fr.wikipedia.org/wiki/Newton_S._Gri
 C,North Gosforth,False,1772,4472,https://fr.wikipedia.org/wiki/North_Gosforth
 C,Nova Veneza (Santa Catarina),False,1826,3799,https://fr.wikipedia.org/wiki/Nova_Veneza_(Santa_Catarina)
 C,Nuri (lanceur spatial),False,2257,6503,https://fr.wikipedia.org/wiki/Nuri_(lanceur_spatial)
+C,Oblewo,False,1604,1337,https://fr.wikipedia.org/wiki/Oblewo
 C,Olethreutini,False,1673,2915,https://fr.wikipedia.org/wiki/Olethreutini
 C,Outsourced (série télévisée),False,1962,4289,https://fr.wikipedia.org/wiki/Outsourced_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)
 C,PRIMES,False,2029,3599,https://fr.wikipedia.org/wiki/PRIMES
@@ -120,11 +128,13 @@ C,Stephen Mallory,False,1764,1828,https://fr.wikipedia.org/wiki/Stephen_Mallory
 C,Sénégal aux Jeux olympiques d'hiver de 1984,False,1666,1725,https://fr.wikipedia.org/wiki/S%C3%A9n%C3%A9gal_aux_Jeux_olympiques_d%27hiver_de_1984
 C,Søren P. Larsen,False,1663,1628,https://fr.wikipedia.org/wiki/S%C3%B8ren_P._Larsen
 C,TNA Lockdown (2015),False,1846,2331,https://fr.wikipedia.org/wiki/TNA_Lockdown_(2015)
+C,The Walt Disney Company Germany,False,2014,4806,https://fr.wikipedia.org/wiki/The_Walt_Disney_Company_Germany
 C,Thomas Morell,False,1742,4532,https://fr.wikipedia.org/wiki/Thomas_Morell
 C,Thymallus brevirostris,False,1587,1377,https://fr.wikipedia.org/wiki/Thymallus_brevirostris
 C,Tournoi de tennis de Zurich (WTA 2001),False,2021,2808,https://fr.wikipedia.org/wiki/Tournoi_de_tennis_de_Zurich_(WTA_2001)
 C,Troglodyte bambla,False,1781,4679,https://fr.wikipedia.org/wiki/Troglodyte_bambla
 C,Truro and Falmouth (circonscription britannique),False,1720,2984,https://fr.wikipedia.org/wiki/Truro_and_Falmouth_(circonscription_britannique)
+C,Valorga,False,2112,5303,https://fr.wikipedia.org/wiki/Valorga
 C,Vigodarzere,False,1649,3503,https://fr.wikipedia.org/wiki/Vigodarzere
 C,Villa Medicea di Arena Metato,False,1682,1839,https://fr.wikipedia.org/wiki/Villa_Medicea_di_Arena_Metato
 C,Wattsburg (Pennsylvanie),False,1770,4561,https://fr.wikipedia.org/wiki/Wattsburg_(Pennsylvanie)
