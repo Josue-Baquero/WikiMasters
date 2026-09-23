@@ -23,6 +23,7 @@ PC,Diva (album d'Annie Lennox),False,3026,3887,https://fr.wikipedia.org/wiki/Div
 PC,Fonction quantile,False,2859,2788,https://fr.wikipedia.org/wiki/Fonction_quantile
 PC,Foyer socio-éducatif,False,2816,2045,https://fr.wikipedia.org/wiki/Foyer_socio-%C3%A9ducatif
 PC,"Gauguin, le loup dans le soleil",False,2773,2235,"https://fr.wikipedia.org/wiki/Gauguin,_le_loup_dans_le_soleil"
+PC,Gaye Su Akyol,False,2924,4176,https://fr.wikipedia.org/wiki/Gaye_Su_Akyol
 PC,Hans Steinbichler,False,2871,2065,https://fr.wikipedia.org/wiki/Hans_Steinbichler
 PC,Hitman pro,False,2795,779,https://fr.wikipedia.org/wiki/Hitman_pro
 PC,Hommes,False,3555,6870,https://fr.wikipedia.org/wiki/Hommes
@@ -35,6 +36,7 @@ PC,Nathan Tella,False,3197,4104,https://fr.wikipedia.org/wiki/Nathan_Tella
 PC,Nédélec,False,3113,3986,https://fr.wikipedia.org/wiki/N%C3%A9d%C3%A9lec
 PC,Spathiphyllum floribundum,False,2548,996,https://fr.wikipedia.org/wiki/Spathiphyllum_floribundum
 PC,Supermatou,False,3136,3823,https://fr.wikipedia.org/wiki/Supermatou
+PC,Vieillespesse,False,3567,6815,https://fr.wikipedia.org/wiki/Vieillespesse
 PC,Zatoka,False,3067,4389,https://fr.wikipedia.org/wiki/Zatoka
 C,(26363) 1999 AG6,False,1817,4741,https://fr.wikipedia.org/wiki/(26363)_1999_AG6
 C,(27749) Tsukadaken,False,1861,4846,https://fr.wikipedia.org/wiki/(27749)_Tsukadaken
@@ -55,7 +57,9 @@ C,Championnat de France féminin de kin-ball 2010-2011,False,1674,2203,https://f
 C,Château de Garengo,False,1810,3921,https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Garengo
 C,Conseiller militaire,False,1547,1385,https://fr.wikipedia.org/wiki/Conseiller_militaire
 C,Cricri,False,1304,144,https://fr.wikipedia.org/wiki/Cricri
+C,"Eric Williams (basket-ball, 1972)",False,1772,1425,"https://fr.wikipedia.org/wiki/Eric_Williams_(basket-ball,_1972)"
 C,Evgeny Matveev,False,2039,3133,https://fr.wikipedia.org/wiki/Evgeny_Matveev
+C,Famille de paysans de Kahlenberg,False,1619,343,https://fr.wikipedia.org/wiki/Famille_de_paysans_de_Kahlenberg
 C,Fernand Thévenet,False,2021,5189,https://fr.wikipedia.org/wiki/Fernand_Th%C3%A9venet
 C,Fran Warren,False,1918,4101,https://fr.wikipedia.org/wiki/Fran_Warren
 C,Georg Bottmann,False,1744,3019,https://fr.wikipedia.org/wiki/Georg_Bottmann
@@ -82,6 +86,7 @@ C,Mixage réducteur,False,1665,3222,https://fr.wikipedia.org/wiki/Mixage_r%C3%A9
 C,Monastère de la Sainte-Trinité d'Hébron,False,1811,1975,https://fr.wikipedia.org/wiki/Monast%C3%A8re_de_la_Sainte-Trinit%C3%A9_d%27H%C3%A9bron
 C,Moteur d'apogée,False,1624,1670,https://fr.wikipedia.org/wiki/Moteur_d%27apog%C3%A9e
 C,Musée de Gorkha,False,1768,1739,https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_Gorkha
+C,Newton S. Grimwood,False,1654,4117,https://fr.wikipedia.org/wiki/Newton_S._Grimwood
 C,North Gosforth,False,1772,4472,https://fr.wikipedia.org/wiki/North_Gosforth
 C,Nova Veneza (Santa Catarina),False,1826,3799,https://fr.wikipedia.org/wiki/Nova_Veneza_(Santa_Catarina)
 C,Nuri (lanceur spatial),False,2257,6503,https://fr.wikipedia.org/wiki/Nuri_(lanceur_spatial)
@@ -104,14 +109,17 @@ C,Route 346 (Terre-Neuve-et-Labrador),False,1714,2433,https://fr.wikipedia.org/w
 C,Rue Galvani,False,1675,2823,https://fr.wikipedia.org/wiki/Rue_Galvani
 C,Ryan Johnston,False,1893,2680,https://fr.wikipedia.org/wiki/Ryan_Johnston
 C,Région des Ilocos,False,1626,2156,https://fr.wikipedia.org/wiki/R%C3%A9gion_des_Ilocos
+C,Saving Face,False,1553,899,https://fr.wikipedia.org/wiki/Saving_Face
 C,Scytodes maresi,False,1698,4490,https://fr.wikipedia.org/wiki/Scytodes_maresi
 C,Septième arrondissement électoral du Nord (Douai) de 1821 à 1830,False,1751,3285,https://fr.wikipedia.org/wiki/Septi%C3%A8me_arrondissement_%C3%A9lectoral_du_Nord_(Douai)_de_1821_%C3%A0_1830
 C,Shiromine-ji,False,1786,4511,https://fr.wikipedia.org/wiki/Shiromine-ji
 C,Shorter (Alabama),False,1782,3868,https://fr.wikipedia.org/wiki/Shorter_(Alabama)
 C,Sport en Éthiopie,False,1910,3170,https://fr.wikipedia.org/wiki/Sport_en_%C3%89thiopie
+C,Stary Jawornik,False,1341,1176,https://fr.wikipedia.org/wiki/Stary_Jawornik
 C,Stephen Mallory,False,1764,1828,https://fr.wikipedia.org/wiki/Stephen_Mallory
 C,Sénégal aux Jeux olympiques d'hiver de 1984,False,1666,1725,https://fr.wikipedia.org/wiki/S%C3%A9n%C3%A9gal_aux_Jeux_olympiques_d%27hiver_de_1984
 C,Søren P. Larsen,False,1663,1628,https://fr.wikipedia.org/wiki/S%C3%B8ren_P._Larsen
+C,TNA Lockdown (2015),False,1846,2331,https://fr.wikipedia.org/wiki/TNA_Lockdown_(2015)
 C,Thomas Morell,False,1742,4532,https://fr.wikipedia.org/wiki/Thomas_Morell
 C,Thymallus brevirostris,False,1587,1377,https://fr.wikipedia.org/wiki/Thymallus_brevirostris
 C,Tournoi de tennis de Zurich (WTA 2001),False,2021,2808,https://fr.wikipedia.org/wiki/Tournoi_de_tennis_de_Zurich_(WTA_2001)
@@ -119,6 +127,7 @@ C,Troglodyte bambla,False,1781,4679,https://fr.wikipedia.org/wiki/Troglodyte_bam
 C,Truro and Falmouth (circonscription britannique),False,1720,2984,https://fr.wikipedia.org/wiki/Truro_and_Falmouth_(circonscription_britannique)
 C,Vigodarzere,False,1649,3503,https://fr.wikipedia.org/wiki/Vigodarzere
 C,Villa Medicea di Arena Metato,False,1682,1839,https://fr.wikipedia.org/wiki/Villa_Medicea_di_Arena_Metato
+C,Wattsburg (Pennsylvanie),False,1770,4561,https://fr.wikipedia.org/wiki/Wattsburg_(Pennsylvanie)
 C,Willy Zeyn (réalisateur),False,1572,906,https://fr.wikipedia.org/wiki/Willy_Zeyn_(r%C3%A9alisateur)
 C,Women's Tour Down Under 2023,False,1963,3989,https://fr.wikipedia.org/wiki/Women%27s_Tour_Down_Under_2023
 C,Yamandu,False,1555,982,https://fr.wikipedia.org/wiki/Yamandu
@@ -127,5 +136,6 @@ C,Zaboukh,False,1928,4389,https://fr.wikipedia.org/wiki/Zaboukh
 C,Ère Gentoku,False,1769,2989,https://fr.wikipedia.org/wiki/%C3%88re_Gentoku
 C,Élections municipales de 2017 en Estrie,False,1732,2530,https://fr.wikipedia.org/wiki/%C3%89lections_municipales_de_2017_en_Estrie
 C,Éruption du Huaynaputina en 1600,False,1714,1062,https://fr.wikipedia.org/wiki/%C3%89ruption_du_Huaynaputina_en_1600
+C,Éternité (album),False,1851,3940,https://fr.wikipedia.org/wiki/%C3%89ternit%C3%A9_(album)
 C,Étoile à CH,False,1644,1902,https://fr.wikipedia.org/wiki/%C3%89toile_%C3%A0_CH
 C,Ου,False,1813,2349,https://fr.wikipedia.org/wiki/%CE%9F%CF%85
