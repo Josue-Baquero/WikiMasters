@@ -51,11 +51,12 @@ def http(method, url, headers=None, body=None):
 def setup(har_path):
     har = json.loads(Path(har_path).read_text(encoding="utf-8"))
     refresh_token = anon_key = None
+    # N'importe quelle requete vers le site porte le cookie de session ; on garde la plus recente.
     for entry in har["log"]["entries"]:
         req = entry["request"]
-        if "/api/packs/open" in req["url"] and not refresh_token:
-            chunks = sorted((c for c in req.get("cookies", []) if c["name"].startswith(COOKIE_NAME)),
-                            key=lambda c: c["name"])
+        chunks = sorted((c for c in req.get("cookies", []) if c["name"].startswith(COOKIE_NAME)),
+                        key=lambda c: c["name"])
+        if "wiki-masters.com" in req["url"] and chunks:
             raw = "".join(c["value"] for c in chunks)
             if raw.startswith("base64-"):
                 raw = raw[len("base64-"):]
@@ -64,7 +65,7 @@ def setup(har_path):
         if SUPABASE in req["url"] and not anon_key:
             anon_key = next((h["value"] for h in req["headers"] if h["name"].lower() == "apikey"), None)
     if not refresh_token or not anon_key:
-        sys.exit("Session introuvable dans le HAR (as-tu ouvert un paquet pendant l'enregistrement ?)")
+        sys.exit("Session introuvable dans le HAR (es-tu bien connecte et as-tu recharge la page ?)")
     save_session({"refresh_token": refresh_token, "anon_key": anon_key})
     print(f"OK : session enregistree dans {SESSION_FILE.name}")
     print("Pour GitHub Actions, copie ces deux valeurs dans les secrets WM_REFRESH_TOKEN et WM_ANON_KEY.")
