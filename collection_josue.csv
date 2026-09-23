@@ -34,6 +34,7 @@ R,Mireille Havet,False,5139,4352,https://fr.wikipedia.org/wiki/Mireille_Havet
 R,Mouton de Soay,False,4784,4305,https://fr.wikipedia.org/wiki/Mouton_de_Soay
 R,Nicolas Cadène,False,5319,6479,https://fr.wikipedia.org/wiki/Nicolas_Cad%C3%A8ne
 R,Oxymètre,False,4750,3010,https://fr.wikipedia.org/wiki/Oxym%C3%A8tre
+R,Prunelle de Troyes,False,3718,3431,https://fr.wikipedia.org/wiki/Prunelle_de_Troyes
 R,Quena,False,5941,8100,https://fr.wikipedia.org/wiki/Quena
 R,Roger Ailes,False,4620,4581,https://fr.wikipedia.org/wiki/Roger_Ailes
 R,Saint-Jean-d'Arvey,False,5322,6703,https://fr.wikipedia.org/wiki/Saint-Jean-d%27Arvey
@@ -47,6 +48,7 @@ PC,1370,False,3210,4985,https://fr.wikipedia.org/wiki/1370
 PC,Adrian van Hooydonk,False,3236,5134,https://fr.wikipedia.org/wiki/Adrian_van_Hooydonk
 PC,Arena Baltika,False,3075,3640,https://fr.wikipedia.org/wiki/Arena_Baltika
 PC,Armement air-sol,False,3554,5604,https://fr.wikipedia.org/wiki/Armement_air-sol
+PC,Arnaud,False,2960,1771,https://fr.wikipedia.org/wiki/Arnaud
 PC,Axelina Johansson,False,2937,2221,https://fr.wikipedia.org/wiki/Axelina_Johansson
 PC,Birka et Hovgården,False,3931,9595,https://fr.wikipedia.org/wiki/Birka_et_Hovg%C3%A5rden
 PC,Canard à foie gras du Sud-Ouest,False,3311,5477,https://fr.wikipedia.org/wiki/Canard_%C3%A0_foie_gras_du_Sud-Ouest
@@ -57,6 +59,7 @@ PC,Château de Leap,False,2865,2175,https://fr.wikipedia.org/wiki/Ch%C3%A2teau_d
 PC,Conscience de soi (Hegel),False,3489,3409,https://fr.wikipedia.org/wiki/Conscience_de_soi_(Hegel)
 PC,Curtil-sous-Buffières,False,3428,6405,https://fr.wikipedia.org/wiki/Curtil-sous-Buffi%C3%A8res
 PC,Diva (album d'Annie Lennox),False,3026,3887,https://fr.wikipedia.org/wiki/Diva_(album_d%27Annie_Lennox)
+PC,"Faubourg d'Amiens British Cemetery, The Arras Mémorial And The Flying Services Mémorial",False,2863,2540,"https://fr.wikipedia.org/wiki/Faubourg_d%27Amiens_British_Cemetery,_The_Arras_M%C3%A9morial_And_The_Flying_Services_M%C3%A9morial"
 PC,Florence Magnin,False,3099,4501,https://fr.wikipedia.org/wiki/Florence_Magnin
 PC,Fonction quantile,False,2859,2788,https://fr.wikipedia.org/wiki/Fonction_quantile
 PC,Forcado,False,3122,3821,https://fr.wikipedia.org/wiki/Forcado
@@ -115,6 +118,7 @@ C,Ambassade de France au Suriname,False,2006,5031,https://fr.wikipedia.org/wiki/
 C,Andok,False,1651,3951,https://fr.wikipedia.org/wiki/Andok
 C,André Peloffy,False,2041,2493,https://fr.wikipedia.org/wiki/Andr%C3%A9_Peloffy
 C,André et les Fantômes,False,1806,1598,https://fr.wikipedia.org/wiki/Andr%C3%A9_et_les_Fant%C3%B4mes
+C,Anim8or,False,1974,2778,https://fr.wikipedia.org/wiki/Anim8or
 C,Antoine de Laincel,False,1771,4343,https://fr.wikipedia.org/wiki/Antoine_de_Laincel
 C,Austrian Business Agency,False,1893,2831,https://fr.wikipedia.org/wiki/Austrian_Business_Agency
 C,Avre,False,1826,1276,https://fr.wikipedia.org/wiki/Avre
@@ -152,6 +156,7 @@ C,Château de Beaumanoir,False,1333,578,https://fr.wikipedia.org/wiki/Ch%C3%A2te
 C,Château de Garengo,False,1810,3921,https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Garengo
 C,Clarence L. Cooper Jr,False,1839,2283,https://fr.wikipedia.org/wiki/Clarence_L._Cooper_Jr
 C,Classe Émeraude,False,1884,3067,https://fr.wikipedia.org/wiki/Classe_%C3%89meraude
+C,Colibri avocette,False,1730,2849,https://fr.wikipedia.org/wiki/Colibri_avocette
 C,Colombier de Maros,False,1698,3576,https://fr.wikipedia.org/wiki/Colombier_de_Maros
 C,Conseiller militaire,False,1547,1385,https://fr.wikipedia.org/wiki/Conseiller_militaire
 C,Conus hervillardi,False,1741,3457,https://fr.wikipedia.org/wiki/Conus_hervillardi
@@ -160,6 +165,7 @@ C,Cricri,False,1304,144,https://fr.wikipedia.org/wiki/Cricri
 C,Croix des Quatre Contrées,False,2120,4993,https://fr.wikipedia.org/wiki/Croix_des_Quatre_Contr%C3%A9es
 C,Diasoma,False,1634,3136,https://fr.wikipedia.org/wiki/Diasoma
 C,District de Murtal,False,1579,2176,https://fr.wikipedia.org/wiki/District_de_Murtal
+C,Dmochy-Rodzonki,False,1611,2546,https://fr.wikipedia.org/wiki/Dmochy-Rodzonki
 C,Dème de Néa Filadélfia-Néa Chalkidóna,False,1552,2766,https://fr.wikipedia.org/wiki/D%C3%A8me_de_N%C3%A9a_Filad%C3%A9lfia-N%C3%A9a_Chalkid%C3%B3na
 C,"Eric Williams (basket-ball, 1972)",False,1772,1425,"https://fr.wikipedia.org/wiki/Eric_Williams_(basket-ball,_1972)"
 C,Evgeny Matveev,False,2039,3133,https://fr.wikipedia.org/wiki/Evgeny_Matveev
@@ -221,6 +227,7 @@ C,Louis Bréchard,False,1912,3672,https://fr.wikipedia.org/wiki/Louis_Br%C3%A9ch
 C,Louis-Cyrille Cottin,False,1758,2814,https://fr.wikipedia.org/wiki/Louis-Cyrille_Cottin
 C,Ludibrium,False,1484,617,https://fr.wikipedia.org/wiki/Ludibrium
 C,Luge aux Jeux olympiques de 1994,False,1663,1228,https://fr.wikipedia.org/wiki/Luge_aux_Jeux_olympiques_de_1994
+C,"L’Amour vainqueur, Qui que tu sois voici ton Maître",False,1712,3056,"https://fr.wikipedia.org/wiki/L%E2%80%99Amour_vainqueur,_Qui_que_tu_sois_voici_ton_Ma%C3%AEtre"
 C,"Madame (film, 2019)",False,1694,3121,"https://fr.wikipedia.org/wiki/Madame_(film,_2019)"
 C,Magaly Gutiérrez,False,1745,1889,https://fr.wikipedia.org/wiki/Magaly_Guti%C3%A9rrez
 C,Maison des Trois Marchands,False,1893,3577,https://fr.wikipedia.org/wiki/Maison_des_Trois_Marchands
@@ -321,6 +328,7 @@ C,Treasury Note,False,1676,1165,https://fr.wikipedia.org/wiki/Treasury_Note
 C,Troglodyte bambla,False,1781,4679,https://fr.wikipedia.org/wiki/Troglodyte_bambla
 C,Truro and Falmouth (circonscription britannique),False,1720,2984,https://fr.wikipedia.org/wiki/Truro_and_Falmouth_(circonscription_britannique)
 C,Un mythe contemporain : le dialogue des civilisations,False,1799,2818,https://fr.wikipedia.org/wiki/Un_mythe_contemporain_:_le_dialogue_des_civilisations
+C,Ushigome-Kagurazaka (métro de Tokyo),False,1760,3285,https://fr.wikipedia.org/wiki/Ushigome-Kagurazaka_(m%C3%A9tro_de_Tokyo)
 C,Valorga,False,2112,5303,https://fr.wikipedia.org/wiki/Valorga
 C,Vigodarzere,False,1649,3503,https://fr.wikipedia.org/wiki/Vigodarzere
 C,Villa Medicea di Arena Metato,False,1682,1839,https://fr.wikipedia.org/wiki/Villa_Medicea_di_Arena_Metato
@@ -342,10 +350,12 @@ C,Zina Sadawol,False,1633,3205,https://fr.wikipedia.org/wiki/Zina_Sadawol
 C,"Ágios Geórgios (Armenádes, Corfou)",False,1524,3043,"https://fr.wikipedia.org/wiki/%C3%81gios_Ge%C3%B3rgios_(Armen%C3%A1des,_Corfou)"
 C,Ère Gentoku,False,1769,2989,https://fr.wikipedia.org/wiki/%C3%88re_Gentoku
 C,Édouard Gérard,False,1571,4375,https://fr.wikipedia.org/wiki/%C3%89douard_G%C3%A9rard
+C,Église Saint-Contest de Saint-Contest,False,1703,3960,https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Contest_de_Saint-Contest
 C,Église Sainte-Anne de Lardiers,False,1680,3575,https://fr.wikipedia.org/wiki/%C3%89glise_Sainte-Anne_de_Lardiers
 C,Élection présidentielle dominicaine de 2012,False,1993,2712,https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_dominicaine_de_2012
 C,Élections municipales de 2017 en Estrie,False,1732,2530,https://fr.wikipedia.org/wiki/%C3%89lections_municipales_de_2017_en_Estrie
 C,Éruption du Huaynaputina en 1600,False,1714,1062,https://fr.wikipedia.org/wiki/%C3%89ruption_du_Huaynaputina_en_1600
 C,Éternité (album),False,1851,3940,https://fr.wikipedia.org/wiki/%C3%89ternit%C3%A9_(album)
 C,Étoile à CH,False,1644,1902,https://fr.wikipedia.org/wiki/%C3%89toile_%C3%A0_CH
+C,Ćelije (Gadžin Han),False,1734,3433,https://fr.wikipedia.org/wiki/%C4%86elije_(Gad%C5%BEin_Han)
 C,Ου,False,1813,2349,https://fr.wikipedia.org/wiki/%CE%9F%CF%85
