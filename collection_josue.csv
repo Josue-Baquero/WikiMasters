@@ -1,5 +1,6 @@
 rarete,titre,shiny,atk,def,url
 UR,Liste d'abréviations en santé,False,9000,4352,https://fr.wikipedia.org/wiki/Liste_d%27abr%C3%A9viations_en_sant%C3%A9
+UR,Renée Zellweger,False,8240,5893,https://fr.wikipedia.org/wiki/Ren%C3%A9e_Zellweger
 UR,Roland Hayes,False,7555,4714,https://fr.wikipedia.org/wiki/Roland_Hayes
 SR,Michel Dodane,False,7219,5894,https://fr.wikipedia.org/wiki/Michel_Dodane
 SR,Richard Blass,False,5926,3186,https://fr.wikipedia.org/wiki/Richard_Blass
@@ -31,6 +32,7 @@ PC,Spathiphyllum floribundum,False,2548,996,https://fr.wikipedia.org/wiki/Spathi
 PC,Supermatou,False,3136,3823,https://fr.wikipedia.org/wiki/Supermatou
 PC,Zatoka,False,3067,4389,https://fr.wikipedia.org/wiki/Zatoka
 C,(26363) 1999 AG6,False,1817,4741,https://fr.wikipedia.org/wiki/(26363)_1999_AG6
+C,(27749) Tsukadaken,False,1861,4846,https://fr.wikipedia.org/wiki/(27749)_Tsukadaken
 C,Aden Meinel,False,1863,1990,https://fr.wikipedia.org/wiki/Aden_Meinel
 C,Administration photo-cinématographique panukrainienne,False,1899,3204,https://fr.wikipedia.org/wiki/Administration_photo-cin%C3%A9matographique_panukrainienne
 C,Altoufievski,False,1841,2295,https://fr.wikipedia.org/wiki/Altoufievski
@@ -64,12 +66,14 @@ C,Martigné (homonymie),False,1437,1083,https://fr.wikipedia.org/wiki/Martign%C3
 C,Mazzè,False,1685,4053,https://fr.wikipedia.org/wiki/Mazz%C3%A8
 C,Monastère de la Sainte-Trinité d'Hébron,False,1811,1975,https://fr.wikipedia.org/wiki/Monast%C3%A8re_de_la_Sainte-Trinit%C3%A9_d%27H%C3%A9bron
 C,Moteur d'apogée,False,1624,1670,https://fr.wikipedia.org/wiki/Moteur_d%27apog%C3%A9e
+C,North Gosforth,False,1772,4472,https://fr.wikipedia.org/wiki/North_Gosforth
 C,Nuri (lanceur spatial),False,2257,6503,https://fr.wikipedia.org/wiki/Nuri_(lanceur_spatial)
 C,Olethreutini,False,1673,2915,https://fr.wikipedia.org/wiki/Olethreutini
 C,Outsourced (série télévisée),False,1962,4289,https://fr.wikipedia.org/wiki/Outsourced_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)
 C,Petropedetes perreti,False,1669,3407,https://fr.wikipedia.org/wiki/Petropedetes_perreti
 C,Pseudoterpna,False,1630,2391,https://fr.wikipedia.org/wiki/Pseudoterpna
 C,RV Kaimei,False,1919,2841,https://fr.wikipedia.org/wiki/RV_Kaimei
+C,Radio Tunisie Culture,False,1899,3689,https://fr.wikipedia.org/wiki/Radio_Tunisie_Culture
 C,Raïon Sovietski (Tcheliabinsk),False,2044,5288,https://fr.wikipedia.org/wiki/Ra%C3%AFon_Sovietski_(Tcheliabinsk)
 C,Rendu volumique direct,False,1921,4352,https://fr.wikipedia.org/wiki/Rendu_volumique_direct
 C,Rent (chanson),False,1672,1944,https://fr.wikipedia.org/wiki/Rent_(chanson)
@@ -81,6 +85,7 @@ C,Septième arrondissement électoral du Nord (Douai) de 1821 à 1830,False,1751
 C,Sport en Éthiopie,False,1910,3170,https://fr.wikipedia.org/wiki/Sport_en_%C3%89thiopie
 C,Stephen Mallory,False,1764,1828,https://fr.wikipedia.org/wiki/Stephen_Mallory
 C,Sénégal aux Jeux olympiques d'hiver de 1984,False,1666,1725,https://fr.wikipedia.org/wiki/S%C3%A9n%C3%A9gal_aux_Jeux_olympiques_d%27hiver_de_1984
+C,Søren P. Larsen,False,1663,1628,https://fr.wikipedia.org/wiki/S%C3%B8ren_P._Larsen
 C,Thomas Morell,False,1742,4532,https://fr.wikipedia.org/wiki/Thomas_Morell
 C,Tournoi de tennis de Zurich (WTA 2001),False,2021,2808,https://fr.wikipedia.org/wiki/Tournoi_de_tennis_de_Zurich_(WTA_2001)
 C,Troglodyte bambla,False,1781,4679,https://fr.wikipedia.org/wiki/Troglodyte_bambla
