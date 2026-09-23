@@ -8,6 +8,7 @@ SR,Sam Underwood,False,5727,3184,https://fr.wikipedia.org/wiki/Sam_Underwood
 R,Aire de Wernicke,False,4000,4352,https://fr.wikipedia.org/wiki/Aire_de_Wernicke
 R,Green Lantern (série télévisée d'animation),False,5017,4498,https://fr.wikipedia.org/wiki/Green_Lantern_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e_d%27animation)
 R,Histoire de la culture de l'hévéa,False,5819,7318,https://fr.wikipedia.org/wiki/Histoire_de_la_culture_de_l%27h%C3%A9v%C3%A9a
+R,Kazunari Ninomiya,False,4885,2906,https://fr.wikipedia.org/wiki/Kazunari_Ninomiya
 R,Le Protecteur (série télévisée),False,4771,3154,https://fr.wikipedia.org/wiki/Le_Protecteur_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)
 R,Mireille Havet,False,5139,4352,https://fr.wikipedia.org/wiki/Mireille_Havet
 R,Nicolas Cadène,False,5319,6479,https://fr.wikipedia.org/wiki/Nicolas_Cad%C3%A8ne
@@ -47,9 +48,13 @@ C,Canford Cliffs,False,1995,2329,https://fr.wikipedia.org/wiki/Canford_Cliffs
 C,Carex mokkwaensis,False,1509,1172,https://fr.wikipedia.org/wiki/Carex_mokkwaensis
 C,Caserne Bridoux,False,1878,5148,https://fr.wikipedia.org/wiki/Caserne_Bridoux
 C,Championnat de Belgique de football de deuxième division 2005-2006,False,1928,1711,https://fr.wikipedia.org/wiki/Championnat_de_Belgique_de_football_de_deuxi%C3%A8me_division_2005-2006
+C,Championnat de France féminin de kin-ball 2010-2011,False,1674,2203,https://fr.wikipedia.org/wiki/Championnat_de_France_f%C3%A9minin_de_kin-ball_2010-2011
 C,Château de Garengo,False,1810,3921,https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Garengo
+C,Conseiller militaire,False,1547,1385,https://fr.wikipedia.org/wiki/Conseiller_militaire
+C,Cricri,False,1304,144,https://fr.wikipedia.org/wiki/Cricri
 C,Fernand Thévenet,False,2021,5189,https://fr.wikipedia.org/wiki/Fernand_Th%C3%A9venet
 C,Fran Warren,False,1918,4101,https://fr.wikipedia.org/wiki/Fran_Warren
+C,Georg Bottmann,False,1744,3019,https://fr.wikipedia.org/wiki/Georg_Bottmann
 C,George Hastings,False,1659,3375,https://fr.wikipedia.org/wiki/George_Hastings
 C,Institut néerlandais de l'image et du son,False,1738,2116,https://fr.wikipedia.org/wiki/Institut_n%C3%A9erlandais_de_l%27image_et_du_son
 C,Isabella Beecher Hooker,False,2172,6217,https://fr.wikipedia.org/wiki/Isabella_Beecher_Hooker
@@ -67,12 +72,15 @@ C,Luge aux Jeux olympiques de 1994,False,1663,1228,https://fr.wikipedia.org/wiki
 C,Marco Crimi,False,1901,3224,https://fr.wikipedia.org/wiki/Marco_Crimi
 C,Martigné (homonymie),False,1437,1083,https://fr.wikipedia.org/wiki/Martign%C3%A9_(homonymie)
 C,Mazzè,False,1685,4053,https://fr.wikipedia.org/wiki/Mazz%C3%A8
+C,Meedhuizen,False,1649,2065,https://fr.wikipedia.org/wiki/Meedhuizen
 C,Monastère de la Sainte-Trinité d'Hébron,False,1811,1975,https://fr.wikipedia.org/wiki/Monast%C3%A8re_de_la_Sainte-Trinit%C3%A9_d%27H%C3%A9bron
 C,Moteur d'apogée,False,1624,1670,https://fr.wikipedia.org/wiki/Moteur_d%27apog%C3%A9e
 C,North Gosforth,False,1772,4472,https://fr.wikipedia.org/wiki/North_Gosforth
+C,Nova Veneza (Santa Catarina),False,1826,3799,https://fr.wikipedia.org/wiki/Nova_Veneza_(Santa_Catarina)
 C,Nuri (lanceur spatial),False,2257,6503,https://fr.wikipedia.org/wiki/Nuri_(lanceur_spatial)
 C,Olethreutini,False,1673,2915,https://fr.wikipedia.org/wiki/Olethreutini
 C,Outsourced (série télévisée),False,1962,4289,https://fr.wikipedia.org/wiki/Outsourced_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)
+C,PRIMES,False,2029,3599,https://fr.wikipedia.org/wiki/PRIMES
 C,Petropedetes perreti,False,1669,3407,https://fr.wikipedia.org/wiki/Petropedetes_perreti
 C,Pseudoterpna,False,1630,2391,https://fr.wikipedia.org/wiki/Pseudoterpna
 C,RV Kaimei,False,1919,2841,https://fr.wikipedia.org/wiki/RV_Kaimei
@@ -81,6 +89,7 @@ C,Raïon Sovietski (Tcheliabinsk),False,2044,5288,https://fr.wikipedia.org/wiki/
 C,Rendu volumique direct,False,1921,4352,https://fr.wikipedia.org/wiki/Rendu_volumique_direct
 C,Rent (chanson),False,1672,1944,https://fr.wikipedia.org/wiki/Rent_(chanson)
 C,Rivière-Kipawa,False,1595,1380,https://fr.wikipedia.org/wiki/Rivi%C3%A8re-Kipawa
+C,Ronnie Cowan (homme politique),False,1817,3419,https://fr.wikipedia.org/wiki/Ronnie_Cowan_(homme_politique)
 C,Route 346 (Terre-Neuve-et-Labrador),False,1714,2433,https://fr.wikipedia.org/wiki/Route_346_(Terre-Neuve-et-Labrador)
 C,Rue Galvani,False,1675,2823,https://fr.wikipedia.org/wiki/Rue_Galvani
 C,Ryan Johnston,False,1893,2680,https://fr.wikipedia.org/wiki/Ryan_Johnston
@@ -99,6 +108,7 @@ C,Vigodarzere,False,1649,3503,https://fr.wikipedia.org/wiki/Vigodarzere
 C,Villa Medicea di Arena Metato,False,1682,1839,https://fr.wikipedia.org/wiki/Villa_Medicea_di_Arena_Metato
 C,Willy Zeyn (réalisateur),False,1572,906,https://fr.wikipedia.org/wiki/Willy_Zeyn_(r%C3%A9alisateur)
 C,Women's Tour Down Under 2023,False,1963,3989,https://fr.wikipedia.org/wiki/Women%27s_Tour_Down_Under_2023
+C,Zaboukh,False,1928,4389,https://fr.wikipedia.org/wiki/Zaboukh
 C,Ère Gentoku,False,1769,2989,https://fr.wikipedia.org/wiki/%C3%88re_Gentoku
 C,Élections municipales de 2017 en Estrie,False,1732,2530,https://fr.wikipedia.org/wiki/%C3%89lections_municipales_de_2017_en_Estrie
 C,Éruption du Huaynaputina en 1600,False,1714,1062,https://fr.wikipedia.org/wiki/%C3%89ruption_du_Huaynaputina_en_1600
