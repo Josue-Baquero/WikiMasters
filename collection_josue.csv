@@ -1,7 +1,10 @@
 rarete,titre,shiny,atk,def,url
 UR,Liste d'abréviations en santé,False,9000,4352,https://fr.wikipedia.org/wiki/Liste_d%27abr%C3%A9viations_en_sant%C3%A9
+UR,Mélanie Bernier,False,7718,4972,https://fr.wikipedia.org/wiki/M%C3%A9lanie_Bernier
 UR,Renée Zellweger,False,8240,5893,https://fr.wikipedia.org/wiki/Ren%C3%A9e_Zellweger
 UR,Roland Hayes,False,7555,4714,https://fr.wikipedia.org/wiki/Roland_Hayes
+UR,Élection présidentielle française de 1995,False,9000,8589,https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_1995
+SR,Giordano Bruno,False,7228,6727,https://fr.wikipedia.org/wiki/Giordano_Bruno
 SR,Michel Dodane,False,7219,5894,https://fr.wikipedia.org/wiki/Michel_Dodane
 SR,Renard polaire,False,7045,8378,https://fr.wikipedia.org/wiki/Renard_polaire
 SR,Richard Blass,False,5926,3186,https://fr.wikipedia.org/wiki/Richard_Blass
@@ -45,6 +48,7 @@ PC,ChangesBowie,False,2907,2672,https://fr.wikipedia.org/wiki/ChangesBowie
 PC,Château de Leap,False,2865,2175,https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Leap
 PC,Conscience de soi (Hegel),False,3489,3409,https://fr.wikipedia.org/wiki/Conscience_de_soi_(Hegel)
 PC,Diva (album d'Annie Lennox),False,3026,3887,https://fr.wikipedia.org/wiki/Diva_(album_d%27Annie_Lennox)
+PC,Florence Magnin,False,3099,4501,https://fr.wikipedia.org/wiki/Florence_Magnin
 PC,Fonction quantile,False,2859,2788,https://fr.wikipedia.org/wiki/Fonction_quantile
 PC,Forcado,False,3122,3821,https://fr.wikipedia.org/wiki/Forcado
 PC,Foyer socio-éducatif,False,2816,2045,https://fr.wikipedia.org/wiki/Foyer_socio-%C3%A9ducatif
@@ -90,6 +94,7 @@ C,Aden Meinel,False,1863,1990,https://fr.wikipedia.org/wiki/Aden_Meinel
 C,Administration photo-cinématographique panukrainienne,False,1899,3204,https://fr.wikipedia.org/wiki/Administration_photo-cin%C3%A9matographique_panukrainienne
 C,Alberto Ferro,False,1696,4032,https://fr.wikipedia.org/wiki/Alberto_Ferro
 C,Alexandru Curtianu,False,1897,3225,https://fr.wikipedia.org/wiki/Alexandru_Curtianu
+C,Allemagne au Concours Eurovision de la chanson 1974,False,1871,3310,https://fr.wikipedia.org/wiki/Allemagne_au_Concours_Eurovision_de_la_chanson_1974
 C,Allosmaitia,False,1718,3914,https://fr.wikipedia.org/wiki/Allosmaitia
 C,Altoufievski,False,1841,2295,https://fr.wikipedia.org/wiki/Altoufievski
 C,Ambassade de France au Suriname,False,2006,5031,https://fr.wikipedia.org/wiki/Ambassade_de_France_au_Suriname
@@ -112,6 +117,7 @@ C,Championnat de Belgique de football de deuxième division 2005-2006,False,1928
 C,Championnat de France féminin de kin-ball 2010-2011,False,1674,2203,https://fr.wikipedia.org/wiki/Championnat_de_France_f%C3%A9minin_de_kin-ball_2010-2011
 C,Championnat du Venezuela de football 2009-2010,False,1980,2627,https://fr.wikipedia.org/wiki/Championnat_du_Venezuela_de_football_2009-2010
 C,Chastel Hernault,False,1586,912,https://fr.wikipedia.org/wiki/Chastel_Hernault
+C,Chawton House,False,1989,4163,https://fr.wikipedia.org/wiki/Chawton_House
 C,Christal Clashing,False,1603,3239,https://fr.wikipedia.org/wiki/Christal_Clashing
 C,Château de Beaumanoir,False,1333,578,https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Beaumanoir
 C,Château de Garengo,False,1810,3921,https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Garengo
@@ -119,6 +125,7 @@ C,Clarence L. Cooper Jr,False,1839,2283,https://fr.wikipedia.org/wiki/Clarence_L
 C,Classe Émeraude,False,1884,3067,https://fr.wikipedia.org/wiki/Classe_%C3%89meraude
 C,Colombier de Maros,False,1698,3576,https://fr.wikipedia.org/wiki/Colombier_de_Maros
 C,Conseiller militaire,False,1547,1385,https://fr.wikipedia.org/wiki/Conseiller_militaire
+C,Conus hervillardi,False,1741,3457,https://fr.wikipedia.org/wiki/Conus_hervillardi
 C,Cricri,False,1304,144,https://fr.wikipedia.org/wiki/Cricri
 C,Diasoma,False,1634,3136,https://fr.wikipedia.org/wiki/Diasoma
 C,District de Murtal,False,1579,2176,https://fr.wikipedia.org/wiki/District_de_Murtal
@@ -129,6 +136,7 @@ C,Famille de paysans de Kahlenberg,False,1619,343,https://fr.wikipedia.org/wiki/
 C,Fernand Thévenet,False,2021,5189,https://fr.wikipedia.org/wiki/Fernand_Th%C3%A9venet
 C,Fondation vaudoise pour la culture,False,2090,3938,https://fr.wikipedia.org/wiki/Fondation_vaudoise_pour_la_culture
 C,Fort Belle Fontaine,False,1685,1638,https://fr.wikipedia.org/wiki/Fort_Belle_Fontaine
+C,Fox Stone Barn,False,1442,4352,https://fr.wikipedia.org/wiki/Fox_Stone_Barn
 C,Fran Warren,False,1918,4101,https://fr.wikipedia.org/wiki/Fran_Warren
 C,Francisco Fuentes,False,1546,1281,https://fr.wikipedia.org/wiki/Francisco_Fuentes
 C,Fritz Husemann,False,1901,4413,https://fr.wikipedia.org/wiki/Fritz_Husemann
@@ -142,6 +150,7 @@ C,Institut néerlandais de l'image et du son,False,1738,2116,https://fr.wikipedi
 C,Isabella Beecher Hooker,False,2172,6217,https://fr.wikipedia.org/wiki/Isabella_Beecher_Hooker
 C,Ivan Samoïlovytch,False,1584,2256,https://fr.wikipedia.org/wiki/Ivan_Samo%C3%AFlovytch
 C,Ivo Maček,False,1632,4352,https://fr.wikipedia.org/wiki/Ivo_Ma%C4%8Dek
+C,Jacky Mamou,False,1676,1412,https://fr.wikipedia.org/wiki/Jacky_Mamou
 C,Jacques Estienne (homonymie),False,1579,3985,https://fr.wikipedia.org/wiki/Jacques_Estienne_(homonymie)
 C,Jean-Jacques Keller (fondeur),False,1904,4336,https://fr.wikipedia.org/wiki/Jean-Jacques_Keller_(fondeur)
 C,Judith Jáuregui,False,1711,3790,https://fr.wikipedia.org/wiki/Judith_J%C3%A1uregui
@@ -211,6 +220,7 @@ C,Rodolphe Lenz,False,2007,3962,https://fr.wikipedia.org/wiki/Rodolphe_Lenz
 C,Ronnie Cowan (homme politique),False,1817,3419,https://fr.wikipedia.org/wiki/Ronnie_Cowan_(homme_politique)
 C,Route 346 (Terre-Neuve-et-Labrador),False,1714,2433,https://fr.wikipedia.org/wiki/Route_346_(Terre-Neuve-et-Labrador)
 C,Rue Galvani,False,1675,2823,https://fr.wikipedia.org/wiki/Rue_Galvani
+C,Rue Hemricourt,False,1804,3164,https://fr.wikipedia.org/wiki/Rue_Hemricourt
 C,Ryan Johnston,False,1893,2680,https://fr.wikipedia.org/wiki/Ryan_Johnston
 C,Région des Ilocos,False,1626,2156,https://fr.wikipedia.org/wiki/R%C3%A9gion_des_Ilocos
 C,Saving Face,False,1553,899,https://fr.wikipedia.org/wiki/Saving_Face
