@@ -38,6 +38,7 @@ PC,Supermatou,False,3136,3823,https://fr.wikipedia.org/wiki/Supermatou
 PC,Zatoka,False,3067,4389,https://fr.wikipedia.org/wiki/Zatoka
 C,(26363) 1999 AG6,False,1817,4741,https://fr.wikipedia.org/wiki/(26363)_1999_AG6
 C,(27749) Tsukadaken,False,1861,4846,https://fr.wikipedia.org/wiki/(27749)_Tsukadaken
+C,1968 en philosophie,False,1697,2623,https://fr.wikipedia.org/wiki/1968_en_philosophie
 C,Aden Meinel,False,1863,1990,https://fr.wikipedia.org/wiki/Aden_Meinel
 C,Administration photo-cinématographique panukrainienne,False,1899,3204,https://fr.wikipedia.org/wiki/Administration_photo-cin%C3%A9matographique_panukrainienne
 C,Altoufievski,False,1841,2295,https://fr.wikipedia.org/wiki/Altoufievski
@@ -54,6 +55,7 @@ C,Championnat de France féminin de kin-ball 2010-2011,False,1674,2203,https://f
 C,Château de Garengo,False,1810,3921,https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Garengo
 C,Conseiller militaire,False,1547,1385,https://fr.wikipedia.org/wiki/Conseiller_militaire
 C,Cricri,False,1304,144,https://fr.wikipedia.org/wiki/Cricri
+C,Evgeny Matveev,False,2039,3133,https://fr.wikipedia.org/wiki/Evgeny_Matveev
 C,Fernand Thévenet,False,2021,5189,https://fr.wikipedia.org/wiki/Fernand_Th%C3%A9venet
 C,Fran Warren,False,1918,4101,https://fr.wikipedia.org/wiki/Fran_Warren
 C,Georg Bottmann,False,1744,3019,https://fr.wikipedia.org/wiki/Georg_Bottmann
@@ -75,15 +77,20 @@ C,Marco Crimi,False,1901,3224,https://fr.wikipedia.org/wiki/Marco_Crimi
 C,Martigné (homonymie),False,1437,1083,https://fr.wikipedia.org/wiki/Martign%C3%A9_(homonymie)
 C,Mazzè,False,1685,4053,https://fr.wikipedia.org/wiki/Mazz%C3%A8
 C,Meedhuizen,False,1649,2065,https://fr.wikipedia.org/wiki/Meedhuizen
+C,Meilleur arbitre de l'année de Serie A,False,1716,986,https://fr.wikipedia.org/wiki/Meilleur_arbitre_de_l%27ann%C3%A9e_de_Serie_A
+C,Mixage réducteur,False,1665,3222,https://fr.wikipedia.org/wiki/Mixage_r%C3%A9ducteur
 C,Monastère de la Sainte-Trinité d'Hébron,False,1811,1975,https://fr.wikipedia.org/wiki/Monast%C3%A8re_de_la_Sainte-Trinit%C3%A9_d%27H%C3%A9bron
 C,Moteur d'apogée,False,1624,1670,https://fr.wikipedia.org/wiki/Moteur_d%27apog%C3%A9e
+C,Musée de Gorkha,False,1768,1739,https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_Gorkha
 C,North Gosforth,False,1772,4472,https://fr.wikipedia.org/wiki/North_Gosforth
 C,Nova Veneza (Santa Catarina),False,1826,3799,https://fr.wikipedia.org/wiki/Nova_Veneza_(Santa_Catarina)
 C,Nuri (lanceur spatial),False,2257,6503,https://fr.wikipedia.org/wiki/Nuri_(lanceur_spatial)
 C,Olethreutini,False,1673,2915,https://fr.wikipedia.org/wiki/Olethreutini
 C,Outsourced (série télévisée),False,1962,4289,https://fr.wikipedia.org/wiki/Outsourced_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)
 C,PRIMES,False,2029,3599,https://fr.wikipedia.org/wiki/PRIMES
+C,Partners of the Trail,False,1720,1373,https://fr.wikipedia.org/wiki/Partners_of_the_Trail
 C,Petropedetes perreti,False,1669,3407,https://fr.wikipedia.org/wiki/Petropedetes_perreti
+C,Porva,False,1537,3339,https://fr.wikipedia.org/wiki/Porva
 C,Pseudoterpna,False,1630,2391,https://fr.wikipedia.org/wiki/Pseudoterpna
 C,RV Kaimei,False,1919,2841,https://fr.wikipedia.org/wiki/RV_Kaimei
 C,Radio Tunisie Culture,False,1899,3689,https://fr.wikipedia.org/wiki/Radio_Tunisie_Culture
@@ -97,8 +104,10 @@ C,Route 346 (Terre-Neuve-et-Labrador),False,1714,2433,https://fr.wikipedia.org/w
 C,Rue Galvani,False,1675,2823,https://fr.wikipedia.org/wiki/Rue_Galvani
 C,Ryan Johnston,False,1893,2680,https://fr.wikipedia.org/wiki/Ryan_Johnston
 C,Région des Ilocos,False,1626,2156,https://fr.wikipedia.org/wiki/R%C3%A9gion_des_Ilocos
+C,Scytodes maresi,False,1698,4490,https://fr.wikipedia.org/wiki/Scytodes_maresi
 C,Septième arrondissement électoral du Nord (Douai) de 1821 à 1830,False,1751,3285,https://fr.wikipedia.org/wiki/Septi%C3%A8me_arrondissement_%C3%A9lectoral_du_Nord_(Douai)_de_1821_%C3%A0_1830
 C,Shiromine-ji,False,1786,4511,https://fr.wikipedia.org/wiki/Shiromine-ji
+C,Shorter (Alabama),False,1782,3868,https://fr.wikipedia.org/wiki/Shorter_(Alabama)
 C,Sport en Éthiopie,False,1910,3170,https://fr.wikipedia.org/wiki/Sport_en_%C3%89thiopie
 C,Stephen Mallory,False,1764,1828,https://fr.wikipedia.org/wiki/Stephen_Mallory
 C,Sénégal aux Jeux olympiques d'hiver de 1984,False,1666,1725,https://fr.wikipedia.org/wiki/S%C3%A9n%C3%A9gal_aux_Jeux_olympiques_d%27hiver_de_1984
@@ -113,6 +122,7 @@ C,Villa Medicea di Arena Metato,False,1682,1839,https://fr.wikipedia.org/wiki/Vi
 C,Willy Zeyn (réalisateur),False,1572,906,https://fr.wikipedia.org/wiki/Willy_Zeyn_(r%C3%A9alisateur)
 C,Women's Tour Down Under 2023,False,1963,3989,https://fr.wikipedia.org/wiki/Women%27s_Tour_Down_Under_2023
 C,Yamandu,False,1555,982,https://fr.wikipedia.org/wiki/Yamandu
+C,Yūko Mori,False,2090,5239,https://fr.wikipedia.org/wiki/Y%C5%ABko_Mori
 C,Zaboukh,False,1928,4389,https://fr.wikipedia.org/wiki/Zaboukh
 C,Ère Gentoku,False,1769,2989,https://fr.wikipedia.org/wiki/%C3%88re_Gentoku
 C,Élections municipales de 2017 en Estrie,False,1732,2530,https://fr.wikipedia.org/wiki/%C3%89lections_municipales_de_2017_en_Estrie
