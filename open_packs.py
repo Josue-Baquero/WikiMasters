@@ -59,7 +59,7 @@ FALLBACK_RARITIES = ["C", "PC", "R", "SR", "UR", "L"]
 RARITY_COLORS = {"R": 0x3B82F6, "SR": 0xA855F7, "UR": 0xF59E0B, "L": 0xEF4444}
 
 
-def http(method, url, headers=None, body=None, retries=3):
+def http(method, url, headers=None, body=None, retries=4):
     # Reessaie sur les erreurs reseau / 5xx (pannes passageres Cloudflare/Supabase).
     data = json.dumps(body).encode() if body is not None else None
     for attempt in range(retries):
@@ -147,7 +147,7 @@ def refresh(sess):
                         {"apikey": sess["anon_key"], "Content-Type": "application/json"},
                         {"refresh_token": sess["refresh_token"]})
     if status == 0 or status >= 500:
-        sys.exit(f"Serveur indisponible ({status}) : {data}\nLa session est intacte, le prochain run reessaiera.")
+        server_unavailable(f"Serveur indisponible ({status}) : {data}")
     if status != 200:
         fail(f"Session expiree ou revoquee ({status}) : {data}\n"
              "Reconnecte-toi sur le site (fenetre privee), refais l'etape setup "
@@ -358,6 +358,30 @@ def notify_cards(cards, collection_line, orders, external=False):
                                       "allowed_mentions": {"parse": []}})
 
 
+SERVER_ERRORS_ALERT = 6  # ~1h de pannes d'affilee, avant que le stock de 10 paquets deborde
+
+
+def server_unavailable(message):
+    # Panne passagere du site/Supabase : la session est intacte, les paquets restent en stock.
+    # Le run finit en succes (pas de mail GitHub) ; alerte privee seulement si la panne dure.
+    state = load_state()
+    state["server_errors"] = state.get("server_errors", 0) + 1
+    STATE_FILE.write_text(json.dumps(state))
+    print(f"::warning::{message} (panne n{state['server_errors']} d'affilee, le prochain run reessaiera)")
+    if state["server_errors"] == SERVER_ERRORS_ALERT:
+        private_post({"content": f"⚠️ **WikiMasters injoignable depuis {SERVER_ERRORS_ALERT} passages** "
+                                 f"pour {ACCOUNT_NAME} (panne du site). Rien a faire, le script continue "
+                                 f"d'essayer, mais des paquets pourraient etre perdus si ca dure.\n```{message}```"})
+    sys.exit(0)
+
+
+def reset_server_errors():
+    state = load_state()
+    if state.get("server_errors"):
+        state["server_errors"] = 0
+        STATE_FILE.write_text(json.dumps(state))
+
+
 def fail(message):
     # Erreur qui demande une action manuelle : alerte privee (ou salon public a defaut).
     payload = {"content": f"⚠️ **Le script WikiMasters est bloque pour {ACCOUNT_NAME}**, "
@@ -387,6 +411,7 @@ def open_packs():
     sess = load_session()
     check_gh_secret_access()
     session_data = refresh(sess)
+    reset_server_errors()
     orders = rarity_orders(sess["anon_key"], session_data["access_token"])
     headers = {"Cookie": auth_cookie(session_data), "User-Agent": UA, "Origin": SITE,
                "Referer": f"{SITE}/pulls", "Accept": "*/*"}
