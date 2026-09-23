@@ -21,7 +21,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -50,6 +50,9 @@ PRIVATE_MIN_RARITY = os.environ.get("DISCORD_PRIVATE_MIN_RARITY") or "SR"
 
 LOG_FILE = HERE / f"cards_log_{ACCOUNT_SLUG}.csv"
 COLLECTION_FILE = HERE / f"collection_{ACCOUNT_SLUG}.csv"
+STATE_FILE = HERE / f"state_{ACCOUNT_SLUG}.json"
+PARIS = ZoneInfo("Europe/Paris")
+SUMMARY_HOUR = int(os.environ.get("DAILY_SUMMARY_HOUR") or 9)
 
 # Ordre de secours si la base ne repond pas ; l'ordre reel est lu dans la table cards.
 FALLBACK_RARITIES = ["C", "PC", "R", "SR", "UR", "L"]
@@ -392,6 +395,68 @@ def open_packs():
         status_line += "\n\n" + collection_line
     write_summary(opened_cards, status_line)
     notify_cards([c for _, c in opened_cards], collection_line, orders)
+    maybe_send_daily_summary(collection_line)
+
+
+# --- Resume quotidien ------------------------------------------------------------
+
+JOURS = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
+MOIS = ["janvier", "fevrier", "mars", "avril", "mai", "juin", "juillet", "aout", "septembre",
+        "octobre", "novembre", "decembre"]
+
+
+def load_state():
+    try:
+        return json.loads(STATE_FILE.read_text())
+    except (OSError, ValueError):
+        return {}
+
+
+def cards_of_day(day):
+    # Cartes ouvertes par le script pendant la journee `day` (heure de Paris).
+    if not LOG_FILE.exists():
+        return []
+    with LOG_FILE.open(encoding="utf-8") as f:
+        return [r for r in csv.DictReader(f)
+                if datetime.fromisoformat(r["date"]).astimezone(PARIS).date() == day]
+
+
+def daily_summary_payload(day, rows, collection_line):
+    rank = {r: i for i, r in enumerate(FALLBACK_RARITIES)}
+    counts = {}
+    for r in rows:
+        counts[r["rarete"]] = counts.get(r["rarete"], 0) + 1
+    by_rarity = " · ".join(f"{counts[r]} {r}" for r in sorted(counts, key=lambda r: rank.get(r, 99)))
+    best = sorted((r for r in rows if rank.get(r["rarete"], 0) >= rank["SR"]),
+                  key=lambda r: -rank.get(r["rarete"], 0))
+    lines = [f"**{len(rows) // 5} paquets** ouverts, **{len(rows)} cartes**",
+             f"Par rarete : {by_rarity or 'aucune'}"]
+    if best:
+        lines += ["", "**Meilleures cartes :**"]
+        lines += [f"• [{r['rarete']}] [{r['titre']}]({r['url']})" for r in best[:15]]
+        if len(best) > 15:
+            lines.append(f"… et {len(best) - 15} autre(s)")
+    if collection_line:
+        lines += ["", collection_line]
+    title = f"📊 Resume du {JOURS[day.weekday()]} {day.day} {MOIS[day.month - 1]} ({ACCOUNT_NAME})"
+    return {"embeds": [{"title": title, "description": "\n".join(lines), "color": 0x10B981}]}
+
+
+def maybe_send_daily_summary(collection_line):
+    # Au premier run apres SUMMARY_HOUR (heure de Paris), envoie en prive le bilan de la veille.
+    now = datetime.now(PARIS)
+    if now.hour < SUMMARY_HOUR or not private_channel_configured():
+        return
+    day = (now - timedelta(days=1)).date()
+    state = load_state()
+    if state.get("last_summary", "") >= day.isoformat():
+        return
+    rows = cards_of_day(day)
+    if rows:
+        private_post(daily_summary_payload(day, rows, collection_line))
+        print(f"Resume du {day} envoye.")
+    state["last_summary"] = day.isoformat()
+    STATE_FILE.write_text(json.dumps(state))
 
 
 def test_discord():
@@ -399,6 +464,9 @@ def test_discord():
                              f"(cartes {PRIVATE_MIN_RARITY}+ et alertes)."})
     discord_post(PUBLIC_WEBHOOK, {"content": f"✅ Test : salon public, cartes {PUBLIC_MIN_RARITY}+ "
                                              f"(envoye par le compte {ACCOUNT_NAME})."})
+    # Apercu du resume quotidien, sur la journee en cours.
+    today = datetime.now(PARIS).date()
+    private_post(daily_summary_payload(today, cards_of_day(today), None))
     mode = "DM bot" if BOT_TOKEN and DISCORD_USER_ID else ("webhook prive" if PRIVATE_WEBHOOK else "aucun")
     print(f"{ACCOUNT_NAME} : notifications privees = {mode}, "
           f"webhook public {'OK' if PUBLIC_WEBHOOK else 'non configure'}.")
