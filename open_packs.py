@@ -288,6 +288,13 @@ def notify_discord_cards(cards, collection_line):
 if __name__ == "__main__":
     if len(sys.argv) >= 3 and sys.argv[1] == "setup":
         setup(sys.argv[2])
+    elif len(sys.argv) >= 2 and sys.argv[1] == "test-discord":
+        if not os.environ.get("DISCORD_WEBHOOK"):
+            sys.exit("DISCORD_WEBHOOK n'est pas defini.")
+        discord_post({"username": "WikiMasters",
+                      "content": "✅ Test : les notifications WikiMasters arrivent bien ici. "
+                                 f"Cartes notifiees a partir de : {os.environ.get('DISCORD_MIN_RARITY') or 'SR'}."})
+        print("Message de test envoye.")
     else:
         try:
             open_packs()

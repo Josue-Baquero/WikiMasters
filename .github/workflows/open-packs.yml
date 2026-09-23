@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "*/10 * * * *"
   workflow_dispatch:
+    inputs:
+      test_discord:
+        description: "Envoyer seulement un message de test sur Discord"
+        type: boolean
+        default: false
 
 concurrency:
   group: open-packs
@@ -36,7 +41,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_PAT }}
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           DISCORD_MIN_RARITY: ${{ vars.DISCORD_MIN_RARITY }}
-        run: python open_packs.py
+        run: python open_packs.py ${{ inputs.test_discord && 'test-discord' || '' }}
 
       - name: Sauvegarder l'historique sur la branche data
         run: |
