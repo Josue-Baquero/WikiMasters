@@ -137,6 +137,20 @@ def log_cards(cards):
                         c.get("wikipedia_url")])
 
 
+def write_summary(opened_cards, status_line):
+    # Tableau affiche sur la page du run GitHub Actions.
+    path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if not path:
+        return
+    lines = [f"### {len(opened_cards)} carte(s) obtenue(s)", "", status_line, ""]
+    if opened_cards:
+        lines += ["| Paquet | Rarete | Carte | ATK | DEF |", "|---|---|---|---|---|"]
+        lines += [f"| {n} | {c.get('rarity')} | [{c.get('wikipedia_title')}]({c.get('wikipedia_url')}) "
+                  f"| {c.get('atk')} | {c.get('def')} |" for n, c in opened_cards]
+    with open(path, "a", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+
+
 def open_packs():
     sess = load_session()
     check_gh_secret_access()
@@ -144,23 +158,31 @@ def open_packs():
     headers = {"Cookie": cookie, "User-Agent": UA, "Origin": SITE, "Referer": f"{SITE}/pulls",
                "Accept": "*/*"}
     opened = 0
+    opened_cards = []
+    status_line = ""
     for _ in range(MAX_PACKS_PER_RUN):
         status, data = http("POST", f"{SITE}/api/packs/open", headers)
         if isinstance(data, dict) and "cards" not in data and data.get("next_regen_at"):
             next_regen = datetime.fromisoformat(data["next_regen_at"].replace("Z", "+00:00"))
-            print(f"Plus de paquets. Prochain paquet a {next_regen.astimezone(ZoneInfo('Europe/Paris')):%H:%M} (heure de Paris).")
+            status_line = (f"Plus de paquets. Prochain paquet a "
+                           f"{next_regen.astimezone(ZoneInfo('Europe/Paris')):%H:%M} (heure de Paris).")
+            print(status_line)
             break
         if status != 200 or not isinstance(data, dict) or "cards" not in data:
-            print(f"Arret : {status} {data}")
+            status_line = f"Arret : {status} {data}"
+            print(status_line)
             break
         opened += 1
         cards = data["cards"]
         log_cards(cards)
+        opened_cards += [(opened, c) for c in cards]
         print(f"Paquet {opened} : " + ", ".join(f"[{c['rarity']}] {c['wikipedia_title']}" for c in cards))
         if data.get("packs_remaining", 0) <= 0:
+            status_line = "Tous les paquets disponibles ont ete ouverts."
             break
         time.sleep(1.5)
     print(f"{opened} paquet(s) ouvert(s).")
+    write_summary(opened_cards, status_line)
 
 
 if __name__ == "__main__":

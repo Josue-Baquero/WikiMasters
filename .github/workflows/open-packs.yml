@@ -9,6 +9,10 @@ concurrency:
   group: open-packs
   cancel-in-progress: false
 
+permissions:
+  contents: write   # pousser l'historique sur la branche data
+  actions: write    # garder le workflow actif (keepalive)
+
 jobs:
   open:
     runs-on: ubuntu-latest
@@ -18,9 +22,43 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Recuperer l'historique des cartes
+        run: |
+          if git fetch -q origin data 2>/dev/null; then
+            git show origin/data:cards_log.csv > cards_log.csv
+          fi
+
       - name: Ouvrir les paquets
         env:
           WM_REFRESH_TOKEN: ${{ secrets.WM_REFRESH_TOKEN }}
           WM_ANON_KEY: ${{ secrets.WM_ANON_KEY }}
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: python open_packs.py
+
+      - name: Sauvegarder l'historique sur la branche data
+        run: |
+          [ -f cards_log.csv ] || exit 0
+          cp cards_log.csv "$RUNNER_TEMP/cards_log.csv"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          if git rev-parse -q --verify origin/data >/dev/null; then
+            git checkout -q -B data origin/data
+          else
+            git checkout -q --orphan data
+            git rm -rfq .
+          fi
+          cp "$RUNNER_TEMP/cards_log.csv" cards_log.csv
+          git add -f cards_log.csv
+          if ! git diff --cached --quiet; then
+            git commit -qm "Nouvelles cartes"
+            git push -q origin data
+          fi
+
+      # GitHub desactive les workflows programmes apres 60 jours sans activite sur un
+      # depot public ; re-activer le workflow remet ce compteur a zero.
+      - name: Garder le workflow actif
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/open-packs.yml/enable"
