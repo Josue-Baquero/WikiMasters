@@ -5,6 +5,7 @@ UR,Renée Zellweger,False,8240,5893,https://fr.wikipedia.org/wiki/Ren%C3%A9e_Zel
 UR,Roland Hayes,False,7555,4714,https://fr.wikipedia.org/wiki/Roland_Hayes
 UR,Élection présidentielle française de 1995,False,9000,8589,https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_1995
 SR,Giordano Bruno,False,7228,6727,https://fr.wikipedia.org/wiki/Giordano_Bruno
+SR,Matrice inversible,False,6640,4260,https://fr.wikipedia.org/wiki/Matrice_inversible
 SR,Michel Dodane,False,7219,5894,https://fr.wikipedia.org/wiki/Michel_Dodane
 SR,Renard polaire,False,7045,8378,https://fr.wikipedia.org/wiki/Renard_polaire
 SR,Richard Blass,False,5926,3186,https://fr.wikipedia.org/wiki/Richard_Blass
@@ -22,6 +23,7 @@ R,Iméréthie,False,4965,4644,https://fr.wikipedia.org/wiki/Im%C3%A9r%C3%A9thie
 R,Kazunari Ninomiya,False,4885,2906,https://fr.wikipedia.org/wiki/Kazunari_Ninomiya
 R,Ketouba,False,4809,5418,https://fr.wikipedia.org/wiki/Ketouba
 R,Le Protecteur (série télévisée),False,4771,3154,https://fr.wikipedia.org/wiki/Le_Protecteur_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)
+R,Ligne éditoriale,False,4410,2903,https://fr.wikipedia.org/wiki/Ligne_%C3%A9ditoriale
 R,Lord-maire de Londres,False,5024,4659,https://fr.wikipedia.org/wiki/Lord-maire_de_Londres
 R,Mireille Havet,False,5139,4352,https://fr.wikipedia.org/wiki/Mireille_Havet
 R,Mouton de Soay,False,4784,4305,https://fr.wikipedia.org/wiki/Mouton_de_Soay
@@ -104,10 +106,12 @@ C,André Peloffy,False,2041,2493,https://fr.wikipedia.org/wiki/Andr%C3%A9_Peloff
 C,Antoine de Laincel,False,1771,4343,https://fr.wikipedia.org/wiki/Antoine_de_Laincel
 C,Austrian Business Agency,False,1893,2831,https://fr.wikipedia.org/wiki/Austrian_Business_Agency
 C,Avre,False,1826,1276,https://fr.wikipedia.org/wiki/Avre
+C,Basmla Elsalamoney,False,1960,4188,https://fr.wikipedia.org/wiki/Basmla_Elsalamoney
 C,Becky Smith,False,1709,2153,https://fr.wikipedia.org/wiki/Becky_Smith
 C,Bernard Dupraz,False,1732,3948,https://fr.wikipedia.org/wiki/Bernard_Dupraz
 C,Bilbo,False,1356,166,https://fr.wikipedia.org/wiki/Bilbo
 C,Björn Schröder,False,1836,3590,https://fr.wikipedia.org/wiki/Bj%C3%B6rn_Schr%C3%B6der
+C,Bokala-Niampondougou,False,1379,3699,https://fr.wikipedia.org/wiki/Bokala-Niampondougou
 C,Cambridge (Vermont),False,1742,3942,https://fr.wikipedia.org/wiki/Cambridge_(Vermont)
 C,Canford Cliffs,False,1995,2329,https://fr.wikipedia.org/wiki/Canford_Cliffs
 C,Carex mokkwaensis,False,1509,1172,https://fr.wikipedia.org/wiki/Carex_mokkwaensis
@@ -145,6 +149,7 @@ C,Francisco Fuentes,False,1546,1281,https://fr.wikipedia.org/wiki/Francisco_Fuen
 C,Fritz Husemann,False,1901,4413,https://fr.wikipedia.org/wiki/Fritz_Husemann
 C,Georg Bottmann,False,1744,3019,https://fr.wikipedia.org/wiki/Georg_Bottmann
 C,George Hastings,False,1659,3375,https://fr.wikipedia.org/wiki/George_Hastings
+C,George Thorne,False,1899,2231,https://fr.wikipedia.org/wiki/George_Thorne
 C,Grotte de Križna,False,1766,4599,https://fr.wikipedia.org/wiki/Grotte_de_Kri%C5%BEna
 C,Guillaume Douceret,False,1518,2892,https://fr.wikipedia.org/wiki/Guillaume_Douceret
 C,Hendrich Jordan,False,1814,1661,https://fr.wikipedia.org/wiki/Hendrich_Jordan
@@ -155,8 +160,11 @@ C,Ivan Samoïlovytch,False,1584,2256,https://fr.wikipedia.org/wiki/Ivan_Samo%C3%
 C,Ivo Maček,False,1632,4352,https://fr.wikipedia.org/wiki/Ivo_Ma%C4%8Dek
 C,Jacky Mamou,False,1676,1412,https://fr.wikipedia.org/wiki/Jacky_Mamou
 C,Jacques Estienne (homonymie),False,1579,3985,https://fr.wikipedia.org/wiki/Jacques_Estienne_(homonymie)
+C,Jacques Pla,False,1801,4199,https://fr.wikipedia.org/wiki/Jacques_Pla
 C,Jean Jacoby (artiste),False,1825,4006,https://fr.wikipedia.org/wiki/Jean_Jacoby_(artiste)
+C,Jean de Bourgogne,False,1487,238,https://fr.wikipedia.org/wiki/Jean_de_Bourgogne
 C,Jean-Jacques Keller (fondeur),False,1904,4336,https://fr.wikipedia.org/wiki/Jean-Jacques_Keller_(fondeur)
+C,Jeroen de Man,False,1718,3396,https://fr.wikipedia.org/wiki/Jeroen_de_Man
 C,Judith Jáuregui,False,1711,3790,https://fr.wikipedia.org/wiki/Judith_J%C3%A1uregui
 C,Kadjinolle,False,1225,115,https://fr.wikipedia.org/wiki/Kadjinolle
 C,Kahina (groupe),False,1881,4871,https://fr.wikipedia.org/wiki/Kahina_(groupe)
@@ -237,10 +245,12 @@ C,Scytodes maresi,False,1698,4490,https://fr.wikipedia.org/wiki/Scytodes_maresi
 C,Septième arrondissement électoral du Nord (Douai) de 1821 à 1830,False,1751,3285,https://fr.wikipedia.org/wiki/Septi%C3%A8me_arrondissement_%C3%A9lectoral_du_Nord_(Douai)_de_1821_%C3%A0_1830
 C,Shiromine-ji,False,1786,4511,https://fr.wikipedia.org/wiki/Shiromine-ji
 C,Shorter (Alabama),False,1782,3868,https://fr.wikipedia.org/wiki/Shorter_(Alabama)
+C,Sonoda,False,1311,145,https://fr.wikipedia.org/wiki/Sonoda
 C,Souffle (film),False,1660,1340,https://fr.wikipedia.org/wiki/Souffle_(film)
 C,Sport en Éthiopie,False,1910,3170,https://fr.wikipedia.org/wiki/Sport_en_%C3%89thiopie
 C,Stary Jawornik,False,1341,1176,https://fr.wikipedia.org/wiki/Stary_Jawornik
 C,Stephen Mallory,False,1764,1828,https://fr.wikipedia.org/wiki/Stephen_Mallory
+C,Sur la plage,False,1774,2552,https://fr.wikipedia.org/wiki/Sur_la_plage
 C,Sègnes,False,1816,1811,https://fr.wikipedia.org/wiki/S%C3%A8gnes
 C,Sénégal aux Jeux olympiques d'hiver de 1984,False,1666,1725,https://fr.wikipedia.org/wiki/S%C3%A9n%C3%A9gal_aux_Jeux_olympiques_d%27hiver_de_1984
 C,Søren P. Larsen,False,1663,1628,https://fr.wikipedia.org/wiki/S%C3%B8ren_P._Larsen
