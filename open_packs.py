@@ -339,6 +339,18 @@ def fail(message):
 
 # --- Execution -------------------------------------------------------------------
 
+def rate_limit_wait(status, data, max_wait=120):
+    # Secondes a attendre si le site a refuse pour ouverture trop rapide (pas la limite journaliere).
+    if status != 429 or not isinstance(data, dict) or data.get("rate_limit_daily"):
+        return None
+    try:
+        retry_at = datetime.fromisoformat(data["retry_after"].replace("Z", "+00:00"))
+    except (KeyError, TypeError, ValueError):
+        return 15
+    wait = (retry_at - datetime.now(timezone.utc)).total_seconds() + 2
+    return min(max(wait, 1), max_wait)
+
+
 def open_packs():
     sess = load_session()
     check_gh_secret_access()
@@ -349,6 +361,12 @@ def open_packs():
     opened, opened_cards, status_line = 0, [], ""
     for _ in range(MAX_PACKS_PER_RUN):
         status, data = http("POST", f"{SITE}/api/packs/open", headers)
+        wait = rate_limit_wait(status, data)
+        if wait is not None:
+            # Le site impose un delai entre deux ouvertures : on attend puis on reessaie une fois.
+            print(f"Ouverture trop rapide, attente de {wait:.0f} s.")
+            time.sleep(wait)
+            status, data = http("POST", f"{SITE}/api/packs/open", headers)
         if isinstance(data, dict) and "cards" not in data and data.get("next_regen_at"):
             next_regen = datetime.fromisoformat(data["next_regen_at"].replace("Z", "+00:00"))
             status_line = (f"Plus de paquets. Prochain paquet a "
