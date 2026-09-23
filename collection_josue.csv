@@ -17,6 +17,7 @@ R,Le Protecteur (série télévisée),False,4771,3154,https://fr.wikipedia.org/w
 R,Mireille Havet,False,5139,4352,https://fr.wikipedia.org/wiki/Mireille_Havet
 R,Nicolas Cadène,False,5319,6479,https://fr.wikipedia.org/wiki/Nicolas_Cad%C3%A8ne
 R,Quena,False,5941,8100,https://fr.wikipedia.org/wiki/Quena
+R,Saint-Jean-d'Arvey,False,5322,6703,https://fr.wikipedia.org/wiki/Saint-Jean-d%27Arvey
 R,Sifaka,False,5968,8424,https://fr.wikipedia.org/wiki/Sifaka
 R,Thou,False,3968,4352,https://fr.wikipedia.org/wiki/Thou
 R,Éditions Stock,False,4891,4390,https://fr.wikipedia.org/wiki/%C3%89ditions_Stock
@@ -24,8 +25,10 @@ PC,1370,False,3210,4985,https://fr.wikipedia.org/wiki/1370
 PC,Adrian van Hooydonk,False,3236,5134,https://fr.wikipedia.org/wiki/Adrian_van_Hooydonk
 PC,Arena Baltika,False,3075,3640,https://fr.wikipedia.org/wiki/Arena_Baltika
 PC,Axelina Johansson,False,2937,2221,https://fr.wikipedia.org/wiki/Axelina_Johansson
+PC,Birka et Hovgården,False,3931,9595,https://fr.wikipedia.org/wiki/Birka_et_Hovg%C3%A5rden
 PC,Canard à foie gras du Sud-Ouest,False,3311,5477,https://fr.wikipedia.org/wiki/Canard_%C3%A0_foie_gras_du_Sud-Ouest
 PC,Certificat d'urbanisme,False,3678,5638,https://fr.wikipedia.org/wiki/Certificat_d%27urbanisme
+PC,Championnat de France de football de troisième division 2007-2008,False,3368,3135,https://fr.wikipedia.org/wiki/Championnat_de_France_de_football_de_troisi%C3%A8me_division_2007-2008
 PC,ChangesBowie,False,2907,2672,https://fr.wikipedia.org/wiki/ChangesBowie
 PC,Conscience de soi (Hegel),False,3489,3409,https://fr.wikipedia.org/wiki/Conscience_de_soi_(Hegel)
 PC,Diva (album d'Annie Lennox),False,3026,3887,https://fr.wikipedia.org/wiki/Diva_(album_d%27Annie_Lennox)
@@ -49,12 +52,14 @@ PC,Marius Ernest Sabino,False,3225,4607,https://fr.wikipedia.org/wiki/Marius_Ern
 PC,Nathan Tella,False,3197,4104,https://fr.wikipedia.org/wiki/Nathan_Tella
 PC,Nédélec,False,3113,3986,https://fr.wikipedia.org/wiki/N%C3%A9d%C3%A9lec
 PC,Octavien de Quingey,False,2903,2280,https://fr.wikipedia.org/wiki/Octavien_de_Quingey
+PC,Paul Rostock,False,2714,1422,https://fr.wikipedia.org/wiki/Paul_Rostock
 PC,Spathiphyllum floribundum,False,2548,996,https://fr.wikipedia.org/wiki/Spathiphyllum_floribundum
 PC,Supermatou,False,3136,3823,https://fr.wikipedia.org/wiki/Supermatou
 PC,Vallée du Moudang,False,3029,3622,https://fr.wikipedia.org/wiki/Vall%C3%A9e_du_Moudang
 PC,Vieillespesse,False,3567,6815,https://fr.wikipedia.org/wiki/Vieillespesse
 PC,Virgil Donati,False,2661,2154,https://fr.wikipedia.org/wiki/Virgil_Donati
 PC,Zatoka,False,3067,4389,https://fr.wikipedia.org/wiki/Zatoka
+C,(24897) 1997 AA17,False,1868,4777,https://fr.wikipedia.org/wiki/(24897)_1997_AA17
 C,(26363) 1999 AG6,False,1817,4741,https://fr.wikipedia.org/wiki/(26363)_1999_AG6
 C,(27749) Tsukadaken,False,1861,4846,https://fr.wikipedia.org/wiki/(27749)_Tsukadaken
 C,(305287) Olegyankov,False,1761,4567,https://fr.wikipedia.org/wiki/(305287)_Olegyankov
@@ -70,11 +75,13 @@ C,Allosmaitia,False,1718,3914,https://fr.wikipedia.org/wiki/Allosmaitia
 C,Altoufievski,False,1841,2295,https://fr.wikipedia.org/wiki/Altoufievski
 C,Ambassade de France au Suriname,False,2006,5031,https://fr.wikipedia.org/wiki/Ambassade_de_France_au_Suriname
 C,Andok,False,1651,3951,https://fr.wikipedia.org/wiki/Andok
+C,André Peloffy,False,2041,2493,https://fr.wikipedia.org/wiki/Andr%C3%A9_Peloffy
 C,Antoine de Laincel,False,1771,4343,https://fr.wikipedia.org/wiki/Antoine_de_Laincel
 C,Austrian Business Agency,False,1893,2831,https://fr.wikipedia.org/wiki/Austrian_Business_Agency
 C,Avre,False,1826,1276,https://fr.wikipedia.org/wiki/Avre
 C,Becky Smith,False,1709,2153,https://fr.wikipedia.org/wiki/Becky_Smith
 C,Bernard Dupraz,False,1732,3948,https://fr.wikipedia.org/wiki/Bernard_Dupraz
+C,Bilbo,False,1356,166,https://fr.wikipedia.org/wiki/Bilbo
 C,Cambridge (Vermont),False,1742,3942,https://fr.wikipedia.org/wiki/Cambridge_(Vermont)
 C,Canford Cliffs,False,1995,2329,https://fr.wikipedia.org/wiki/Canford_Cliffs
 C,Carex mokkwaensis,False,1509,1172,https://fr.wikipedia.org/wiki/Carex_mokkwaensis
@@ -91,6 +98,7 @@ C,"Eric Williams (basket-ball, 1972)",False,1772,1425,"https://fr.wikipedia.org/
 C,Evgeny Matveev,False,2039,3133,https://fr.wikipedia.org/wiki/Evgeny_Matveev
 C,Famille de paysans de Kahlenberg,False,1619,343,https://fr.wikipedia.org/wiki/Famille_de_paysans_de_Kahlenberg
 C,Fernand Thévenet,False,2021,5189,https://fr.wikipedia.org/wiki/Fernand_Th%C3%A9venet
+C,Fondation vaudoise pour la culture,False,2090,3938,https://fr.wikipedia.org/wiki/Fondation_vaudoise_pour_la_culture
 C,Fran Warren,False,1918,4101,https://fr.wikipedia.org/wiki/Fran_Warren
 C,Fritz Husemann,False,1901,4413,https://fr.wikipedia.org/wiki/Fritz_Husemann
 C,Georg Bottmann,False,1744,3019,https://fr.wikipedia.org/wiki/Georg_Bottmann
@@ -113,12 +121,14 @@ C,Liste des gminy de Podlachie,False,2182,2055,https://fr.wikipedia.org/wiki/Lis
 C,Ludibrium,False,1484,617,https://fr.wikipedia.org/wiki/Ludibrium
 C,Luge aux Jeux olympiques de 1994,False,1663,1228,https://fr.wikipedia.org/wiki/Luge_aux_Jeux_olympiques_de_1994
 C,"Madame (film, 2019)",False,1694,3121,"https://fr.wikipedia.org/wiki/Madame_(film,_2019)"
+C,Maison du Gouverneur (Huy),False,1860,3019,https://fr.wikipedia.org/wiki/Maison_du_Gouverneur_(Huy)
 C,Marco Crimi,False,1901,3224,https://fr.wikipedia.org/wiki/Marco_Crimi
 C,Martigné (homonymie),False,1437,1083,https://fr.wikipedia.org/wiki/Martign%C3%A9_(homonymie)
 C,Martin Kellerman,False,1610,1930,https://fr.wikipedia.org/wiki/Martin_Kellerman
 C,Mazzè,False,1685,4053,https://fr.wikipedia.org/wiki/Mazz%C3%A8
 C,Meedhuizen,False,1649,2065,https://fr.wikipedia.org/wiki/Meedhuizen
 C,Meilleur arbitre de l'année de Serie A,False,1716,986,https://fr.wikipedia.org/wiki/Meilleur_arbitre_de_l%27ann%C3%A9e_de_Serie_A
+C,Mireille Mathieu (tournée 2005),False,1756,1217,https://fr.wikipedia.org/wiki/Mireille_Mathieu_(tourn%C3%A9e_2005)
 C,Mixage réducteur,False,1665,3222,https://fr.wikipedia.org/wiki/Mixage_r%C3%A9ducteur
 C,Monastère de la Sainte-Trinité d'Hébron,False,1811,1975,https://fr.wikipedia.org/wiki/Monast%C3%A8re_de_la_Sainte-Trinit%C3%A9_d%27H%C3%A9bron
 C,Moteur d'apogée,False,1624,1670,https://fr.wikipedia.org/wiki/Moteur_d%27apog%C3%A9e
@@ -132,6 +142,8 @@ C,Nuri (lanceur spatial),False,2257,6503,https://fr.wikipedia.org/wiki/Nuri_(lan
 C,Oblewo,False,1604,1337,https://fr.wikipedia.org/wiki/Oblewo
 C,Olethreutini,False,1673,2915,https://fr.wikipedia.org/wiki/Olethreutini
 C,Olivia Lomenech Gill,False,1965,5181,https://fr.wikipedia.org/wiki/Olivia_Lomenech_Gill
+C,Olivier Mwenze Mukaleng,False,1777,2003,https://fr.wikipedia.org/wiki/Olivier_Mwenze_Mukaleng
+C,Ouragan Ernesto (2024),False,2264,6123,https://fr.wikipedia.org/wiki/Ouragan_Ernesto_(2024)
 C,Outsourced (série télévisée),False,1962,4289,https://fr.wikipedia.org/wiki/Outsourced_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)
 C,PRIMES,False,2029,3599,https://fr.wikipedia.org/wiki/PRIMES
 C,Panorpa cognata,False,1716,3066,https://fr.wikipedia.org/wiki/Panorpa_cognata
@@ -144,6 +156,7 @@ C,RV Kaimei,False,1919,2841,https://fr.wikipedia.org/wiki/RV_Kaimei
 C,Radio Tunisie Culture,False,1899,3689,https://fr.wikipedia.org/wiki/Radio_Tunisie_Culture
 C,Raszewy (Jarocin),False,1741,2944,https://fr.wikipedia.org/wiki/Raszewy_(Jarocin)
 C,Raïon Sovietski (Tcheliabinsk),False,2044,5288,https://fr.wikipedia.org/wiki/Ra%C3%AFon_Sovietski_(Tcheliabinsk)
+C,Raïon de Tchernihiv,False,1733,5250,https://fr.wikipedia.org/wiki/Ra%C3%AFon_de_Tchernihiv
 C,Rendu volumique direct,False,1921,4352,https://fr.wikipedia.org/wiki/Rendu_volumique_direct
 C,Rent (chanson),False,1672,1944,https://fr.wikipedia.org/wiki/Rent_(chanson)
 C,Rhopalochernes titschacki,False,1676,3104,https://fr.wikipedia.org/wiki/Rhopalochernes_titschacki
@@ -165,9 +178,11 @@ C,Stephen Mallory,False,1764,1828,https://fr.wikipedia.org/wiki/Stephen_Mallory
 C,Sénégal aux Jeux olympiques d'hiver de 1984,False,1666,1725,https://fr.wikipedia.org/wiki/S%C3%A9n%C3%A9gal_aux_Jeux_olympiques_d%27hiver_de_1984
 C,Søren P. Larsen,False,1663,1628,https://fr.wikipedia.org/wiki/S%C3%B8ren_P._Larsen
 C,TNA Lockdown (2015),False,1846,2331,https://fr.wikipedia.org/wiki/TNA_Lockdown_(2015)
+C,Teenage Universe ~Chewing Gum Baby,False,1676,4352,https://fr.wikipedia.org/wiki/Teenage_Universe_~Chewing_Gum_Baby
 C,The Walt Disney Company Germany,False,2014,4806,https://fr.wikipedia.org/wiki/The_Walt_Disney_Company_Germany
 C,Thomas Morell,False,1742,4532,https://fr.wikipedia.org/wiki/Thomas_Morell
 C,Thymallus brevirostris,False,1587,1377,https://fr.wikipedia.org/wiki/Thymallus_brevirostris
+C,Tournoi de Hong Kong de rugby à sept 2008,False,2197,3659,https://fr.wikipedia.org/wiki/Tournoi_de_Hong_Kong_de_rugby_%C3%A0_sept_2008
 C,Tournoi de tennis de Zurich (WTA 2001),False,2021,2808,https://fr.wikipedia.org/wiki/Tournoi_de_tennis_de_Zurich_(WTA_2001)
 C,Tournoi de tennis du Mexique (ATP 2020),False,2045,3126,https://fr.wikipedia.org/wiki/Tournoi_de_tennis_du_Mexique_(ATP_2020)
 C,Treasury Note,False,1676,1165,https://fr.wikipedia.org/wiki/Treasury_Note
