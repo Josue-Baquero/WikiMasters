@@ -243,10 +243,58 @@ def open_packs():
     if collection_line:
         status_line += "\n\n" + collection_line
     write_summary(opened_cards, status_line)
+    notify_discord_cards([c for _, c in opened_cards], collection_line)
+
+
+RARITIES = ["C", "PC", "R", "SR", "UR"]  # du plus commun au plus rare (rarity_order 0, 1, 2...)
+RARITY_COLORS = {"R": 0x3B82F6, "SR": 0xA855F7, "UR": 0xF59E0B}
+
+
+def discord_post(payload):
+    url = os.environ.get("DISCORD_WEBHOOK")
+    if not url:
+        return
+    # Cloudflare bloque le User-Agent par defaut de urllib.
+    status, data = http("POST", url, {"Content-Type": "application/json", "User-Agent": UA}, payload)
+    if status not in (200, 204):
+        print(f"Notification Discord echouee ({status}) : {data}")
+
+
+def notify_discord_cards(cards, collection_line):
+    # Notifie seulement les cartes au moins aussi rares que DISCORD_MIN_RARITY (SR par defaut).
+    min_rarity = os.environ.get("DISCORD_MIN_RARITY") or "SR"
+    min_order = RARITIES.index(min_rarity) if min_rarity in RARITIES else 3
+    rares = [c for c in cards if (c.get("rarity_order") or 0) >= min_order]
+    if not rares:
+        return
+    rares.sort(key=lambda c: -(c.get("rarity_order") or 0))
+    embeds = []
+    for c in rares[:10]:  # Discord limite a 10 embeds par message
+        embed = {"title": f"[{c.get('rarity')}] {c.get('wikipedia_title')}", "url": c.get("wikipedia_url"),
+                 "description": (c.get("summary") or "")[:300],
+                 "color": RARITY_COLORS.get(c.get("rarity"), 0x10B981),
+                 "fields": [{"name": "ATK", "value": str(c.get("atk")), "inline": True},
+                            {"name": "DEF", "value": str(c.get("def")), "inline": True}]}
+        embed = {k: v for k, v in embed.items() if v}  # Discord refuse les champs vides
+        if c.get("image_url") and not c.get("hide_image") and not c.get("nsfw_image"):
+            embed["thumbnail"] = {"url": c["image_url"]}
+        embeds.append(embed)
+    content = f"🎴 **{len(rares)} carte(s) rare(s) obtenue(s) !**"
+    if collection_line:
+        content += f"\n{collection_line}"
+    discord_post({"username": "WikiMasters", "content": content, "embeds": embeds})
 
 
 if __name__ == "__main__":
     if len(sys.argv) >= 3 and sys.argv[1] == "setup":
         setup(sys.argv[2])
     else:
-        open_packs()
+        try:
+            open_packs()
+        except SystemExit as e:
+            # Previent sur Discord quand une action manuelle est necessaire (pas pour les pannes passageres).
+            msg = str(e.code or "")
+            if "Reconnecte-toi" in msg or "Impossible d'ecrire" in msg:
+                discord_post({"username": "WikiMasters",
+                              "content": f"⚠️ **Le script WikiMasters est bloque**, action requise :\n```{msg}```"})
+            raise

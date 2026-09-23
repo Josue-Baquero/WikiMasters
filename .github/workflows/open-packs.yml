@@ -34,6 +34,8 @@ jobs:
           WM_REFRESH_TOKEN: ${{ secrets.WM_REFRESH_TOKEN }}
           WM_ANON_KEY: ${{ secrets.WM_ANON_KEY }}
           GH_TOKEN: ${{ secrets.GH_PAT }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_MIN_RARITY: ${{ vars.DISCORD_MIN_RARITY }}
         run: python open_packs.py
 
       - name: Sauvegarder l'historique sur la branche data
