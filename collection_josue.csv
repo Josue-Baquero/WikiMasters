@@ -3,9 +3,11 @@ UR,Liste d'abréviations en santé,False,9000,4352,https://fr.wikipedia.org/wiki
 UR,Renée Zellweger,False,8240,5893,https://fr.wikipedia.org/wiki/Ren%C3%A9e_Zellweger
 UR,Roland Hayes,False,7555,4714,https://fr.wikipedia.org/wiki/Roland_Hayes
 SR,Michel Dodane,False,7219,5894,https://fr.wikipedia.org/wiki/Michel_Dodane
+SR,Renard polaire,False,7045,8378,https://fr.wikipedia.org/wiki/Renard_polaire
 SR,Richard Blass,False,5926,3186,https://fr.wikipedia.org/wiki/Richard_Blass
 SR,Sam Underwood,False,5727,3184,https://fr.wikipedia.org/wiki/Sam_Underwood
 SR,Thomas Buberl,False,5952,4959,https://fr.wikipedia.org/wiki/Thomas_Buberl
+R,30 avril,False,5713,6964,https://fr.wikipedia.org/wiki/30_avril
 R,Aire de Wernicke,False,4000,4352,https://fr.wikipedia.org/wiki/Aire_de_Wernicke
 R,Athlone,False,4531,3861,https://fr.wikipedia.org/wiki/Athlone
 R,Green Lantern (série télévisée d'animation),False,5017,4498,https://fr.wikipedia.org/wiki/Green_Lantern_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e_d%27animation)
@@ -14,6 +16,7 @@ R,Iméréthie,False,4965,4644,https://fr.wikipedia.org/wiki/Im%C3%A9r%C3%A9thie
 R,Kazunari Ninomiya,False,4885,2906,https://fr.wikipedia.org/wiki/Kazunari_Ninomiya
 R,Ketouba,False,4809,5418,https://fr.wikipedia.org/wiki/Ketouba
 R,Le Protecteur (série télévisée),False,4771,3154,https://fr.wikipedia.org/wiki/Le_Protecteur_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)
+R,Lord-maire de Londres,False,5024,4659,https://fr.wikipedia.org/wiki/Lord-maire_de_Londres
 R,Mireille Havet,False,5139,4352,https://fr.wikipedia.org/wiki/Mireille_Havet
 R,Nicolas Cadène,False,5319,6479,https://fr.wikipedia.org/wiki/Nicolas_Cad%C3%A8ne
 R,Quena,False,5941,8100,https://fr.wikipedia.org/wiki/Quena
@@ -82,6 +85,7 @@ C,Avre,False,1826,1276,https://fr.wikipedia.org/wiki/Avre
 C,Becky Smith,False,1709,2153,https://fr.wikipedia.org/wiki/Becky_Smith
 C,Bernard Dupraz,False,1732,3948,https://fr.wikipedia.org/wiki/Bernard_Dupraz
 C,Bilbo,False,1356,166,https://fr.wikipedia.org/wiki/Bilbo
+C,Björn Schröder,False,1836,3590,https://fr.wikipedia.org/wiki/Bj%C3%B6rn_Schr%C3%B6der
 C,Cambridge (Vermont),False,1742,3942,https://fr.wikipedia.org/wiki/Cambridge_(Vermont)
 C,Canford Cliffs,False,1995,2329,https://fr.wikipedia.org/wiki/Canford_Cliffs
 C,Carex mokkwaensis,False,1509,1172,https://fr.wikipedia.org/wiki/Carex_mokkwaensis
@@ -94,6 +98,7 @@ C,Château de Garengo,False,1810,3921,https://fr.wikipedia.org/wiki/Ch%C3%A2teau
 C,Colombier de Maros,False,1698,3576,https://fr.wikipedia.org/wiki/Colombier_de_Maros
 C,Conseiller militaire,False,1547,1385,https://fr.wikipedia.org/wiki/Conseiller_militaire
 C,Cricri,False,1304,144,https://fr.wikipedia.org/wiki/Cricri
+C,District de Murtal,False,1579,2176,https://fr.wikipedia.org/wiki/District_de_Murtal
 C,"Eric Williams (basket-ball, 1972)",False,1772,1425,"https://fr.wikipedia.org/wiki/Eric_Williams_(basket-ball,_1972)"
 C,Evgeny Matveev,False,2039,3133,https://fr.wikipedia.org/wiki/Evgeny_Matveev
 C,Famille de paysans de Kahlenberg,False,1619,343,https://fr.wikipedia.org/wiki/Famille_de_paysans_de_Kahlenberg
@@ -106,6 +111,7 @@ C,George Hastings,False,1659,3375,https://fr.wikipedia.org/wiki/George_Hastings
 C,Institut néerlandais de l'image et du son,False,1738,2116,https://fr.wikipedia.org/wiki/Institut_n%C3%A9erlandais_de_l%27image_et_du_son
 C,Isabella Beecher Hooker,False,2172,6217,https://fr.wikipedia.org/wiki/Isabella_Beecher_Hooker
 C,Ivan Samoïlovytch,False,1584,2256,https://fr.wikipedia.org/wiki/Ivan_Samo%C3%AFlovytch
+C,Ivo Maček,False,1632,4352,https://fr.wikipedia.org/wiki/Ivo_Ma%C4%8Dek
 C,Jacques Estienne (homonymie),False,1579,3985,https://fr.wikipedia.org/wiki/Jacques_Estienne_(homonymie)
 C,Jean-Jacques Keller (fondeur),False,1904,4336,https://fr.wikipedia.org/wiki/Jean-Jacques_Keller_(fondeur)
 C,Judith Jáuregui,False,1711,3790,https://fr.wikipedia.org/wiki/Judith_J%C3%A1uregui
@@ -113,11 +119,13 @@ C,Kahina (groupe),False,1881,4871,https://fr.wikipedia.org/wiki/Kahina_(groupe)
 C,Kindattu,False,1615,4209,https://fr.wikipedia.org/wiki/Kindattu
 C,Kyjov (district de Žďár nad Sázavou),False,1760,3705,https://fr.wikipedia.org/wiki/Kyjov_(district_de_%C5%BD%C4%8F%C3%A1r_nad_S%C3%A1zavou)
 C,L'Ombre déchirée,False,1738,2343,https://fr.wikipedia.org/wiki/L%27Ombre_d%C3%A9chir%C3%A9e
+C,Laumontite,False,1926,5189,https://fr.wikipedia.org/wiki/Laumontite
 C,Le Lac (film),False,1660,1156,https://fr.wikipedia.org/wiki/Le_Lac_(film)
 C,Lilly Stoffelsma,False,1604,4208,https://fr.wikipedia.org/wiki/Lilly_Stoffelsma
 C,Liste des cours d'eau du Soudan,False,1556,1535,https://fr.wikipedia.org/wiki/Liste_des_cours_d%27eau_du_Soudan
 C,Liste des diffuseurs des Jeux olympiques d'hiver de 2014,False,2118,4863,https://fr.wikipedia.org/wiki/Liste_des_diffuseurs_des_Jeux_olympiques_d%27hiver_de_2014
 C,Liste des gminy de Podlachie,False,2182,2055,https://fr.wikipedia.org/wiki/Liste_des_gminy_de_Podlachie
+C,Louis Bréchard,False,1912,3672,https://fr.wikipedia.org/wiki/Louis_Br%C3%A9chard
 C,Ludibrium,False,1484,617,https://fr.wikipedia.org/wiki/Ludibrium
 C,Luge aux Jeux olympiques de 1994,False,1663,1228,https://fr.wikipedia.org/wiki/Luge_aux_Jeux_olympiques_de_1994
 C,"Madame (film, 2019)",False,1694,3121,"https://fr.wikipedia.org/wiki/Madame_(film,_2019)"
@@ -155,6 +163,7 @@ C,Pseudoterpna,False,1630,2391,https://fr.wikipedia.org/wiki/Pseudoterpna
 C,RV Kaimei,False,1919,2841,https://fr.wikipedia.org/wiki/RV_Kaimei
 C,Radio Tunisie Culture,False,1899,3689,https://fr.wikipedia.org/wiki/Radio_Tunisie_Culture
 C,Raszewy (Jarocin),False,1741,2944,https://fr.wikipedia.org/wiki/Raszewy_(Jarocin)
+C,Ray Hopkins,False,1794,3123,https://fr.wikipedia.org/wiki/Ray_Hopkins
 C,Raïon Sovietski (Tcheliabinsk),False,2044,5288,https://fr.wikipedia.org/wiki/Ra%C3%AFon_Sovietski_(Tcheliabinsk)
 C,Raïon de Tchernihiv,False,1733,5250,https://fr.wikipedia.org/wiki/Ra%C3%AFon_de_Tchernihiv
 C,Rendu volumique direct,False,1921,4352,https://fr.wikipedia.org/wiki/Rendu_volumique_direct
@@ -197,6 +206,7 @@ C,Women's Tour Down Under 2023,False,1963,3989,https://fr.wikipedia.org/wiki/Wom
 C,Yamandu,False,1555,982,https://fr.wikipedia.org/wiki/Yamandu
 C,Yūko Mori,False,2090,5239,https://fr.wikipedia.org/wiki/Y%C5%ABko_Mori
 C,Zaboukh,False,1928,4389,https://fr.wikipedia.org/wiki/Zaboukh
+C,Zambanèga (Tanghin-Dassouri),False,1745,3780,https://fr.wikipedia.org/wiki/Zamban%C3%A8ga_(Tanghin-Dassouri)
 C,Ère Gentoku,False,1769,2989,https://fr.wikipedia.org/wiki/%C3%88re_Gentoku
 C,Édouard Gérard,False,1571,4375,https://fr.wikipedia.org/wiki/%C3%89douard_G%C3%A9rard
 C,Élections municipales de 2017 en Estrie,False,1732,2530,https://fr.wikipedia.org/wiki/%C3%89lections_municipales_de_2017_en_Estrie
