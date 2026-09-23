@@ -78,17 +78,27 @@ def load_session():
     sys.exit("Pas de session : lance d'abord  python open_packs.py setup wiki.har")
 
 
+def set_gh_secret(name, value):
+    # Passe par stdin pour que la valeur n'apparaisse jamais dans une trace d'erreur.
+    r = subprocess.run(["gh", "secret", "set", name], input=value, text=True, capture_output=True)
+    if r.returncode != 0:
+        sys.exit(f"Impossible d'ecrire le secret {name} : {r.stderr.strip()}\n"
+                 "Verifie que GH_PAT a la permission Secrets: Read and write sur ce depot.")
+
+
+def check_gh_secret_access():
+    # Verifie les droits AVANT de consommer le refresh token (usage unique),
+    # sinon un echec d'ecriture ferait perdre la session.
+    if os.environ.get("GITHUB_ACTIONS"):
+        set_gh_secret("WM_WRITE_CHECK", "ok")
+
+
 def save_session(sess):
     if os.environ.get("GITHUB_ACTIONS"):
         # Masque le nouveau token dans les logs (le depot est public).
         print(f"::add-mask::{sess['refresh_token']}", flush=True)
         # Le refresh token est a usage unique : on met a jour le secret pour le prochain run.
-        # Passe par stdin pour que le token n'apparaisse jamais dans une trace d'erreur.
-        r = subprocess.run(["gh", "secret", "set", "WM_REFRESH_TOKEN"], input=sess["refresh_token"],
-                           text=True, capture_output=True)
-        if r.returncode != 0:
-            sys.exit("Impossible de mettre a jour le secret WM_REFRESH_TOKEN "
-                     "(verifie que GH_PAT a la permission Secrets: Read and write sur ce depot).")
+        set_gh_secret("WM_REFRESH_TOKEN", sess["refresh_token"])
     else:
         SESSION_FILE.write_text(json.dumps(sess))
 
@@ -127,6 +137,7 @@ def log_cards(cards):
 
 def open_packs():
     sess = load_session()
+    check_gh_secret_access()
     cookie = auth_cookie(refresh(sess))
     headers = {"Cookie": cookie, "User-Agent": UA, "Origin": SITE, "Referer": f"{SITE}/pulls",
                "Accept": "*/*"}
