@@ -35,18 +35,27 @@ SESSION_FILE = HERE / "session.json"
 LOG_FILE = HERE / "cards_log.csv"
 
 
-def http(method, url, headers=None, body=None):
+def http(method, url, headers=None, body=None, retries=3):
+    # Reessaie sur les erreurs reseau / 5xx (pannes passageres Cloudflare/Supabase).
     data = json.dumps(body).encode() if body is not None else None
-    req = urllib.request.Request(url, data=data, method=method, headers=headers or {})
-    try:
-        with urllib.request.urlopen(req, timeout=30) as r:
-            return r.status, json.loads(r.read().decode() or "null")
-    except urllib.error.HTTPError as e:
-        text = e.read().decode(errors="replace")
+    for attempt in range(retries):
+        req = urllib.request.Request(url, data=data, method=method, headers=headers or {})
         try:
-            return e.code, json.loads(text)
-        except ValueError:
-            return e.code, text[:500]
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.status, json.loads(r.read().decode() or "null")
+        except urllib.error.HTTPError as e:
+            text = e.read().decode(errors="replace")
+            try:
+                status, payload = e.code, json.loads(text)
+            except ValueError:
+                status, payload = e.code, text[:500]
+        except (urllib.error.URLError, TimeoutError) as e:
+            status, payload = 0, str(e)
+        if status and status < 500:
+            return status, payload
+        if attempt < retries - 1:
+            time.sleep(10 * (attempt + 1))
+    return status, payload
 
 
 def setup(har_path):
@@ -109,6 +118,8 @@ def refresh(sess):
     status, data = http("POST", f"{SUPABASE}/auth/v1/token?grant_type=refresh_token",
                         {"apikey": sess["anon_key"], "Content-Type": "application/json"},
                         {"refresh_token": sess["refresh_token"]})
+    if status == 0 or status >= 500:
+        sys.exit(f"Serveur indisponible ({status}) : {data}\nLa session est intacte, le prochain run reessaiera.")
     if status != 200:
         sys.exit(f"Echec du rafraichissement de session ({status}) : {data}\n"
                  "Reconnecte-toi sur le site et refais l'etape setup.")
@@ -137,6 +148,51 @@ def log_cards(cards):
                         c.get("wikipedia_url")])
 
 
+def supabase_get_all(path, anon_key, access_token, page_size=1000):
+    # Lecture paginee de l'API REST Supabase (limitee a 1000 lignes par requete).
+    headers = {"apikey": anon_key, "Authorization": f"Bearer {access_token}"}
+    rows, offset = [], 0
+    while True:
+        sep = "&" if "?" in path else "?"
+        status, data = http("GET", f"{SUPABASE}/rest/v1/{path}{sep}limit={page_size}&offset={offset}", headers)
+        if status != 200:
+            return status, data
+        rows += data
+        if len(data) < page_size:
+            return 200, rows
+        offset += page_size
+
+
+def export_collection(anon_key, session_data):
+    # Exporte toute la collection du compte (y compris les cartes obtenues hors script).
+    token, user_id = session_data["access_token"], session_data["user"]["id"]
+    fields = "wikipedia_title,rarity,rarity_order,atk,def,wikipedia_url"
+    status, rows = supabase_get_all(f"user_cards?select=card_id,is_shiny,cards({fields})"
+                                    f"&user_id=eq.{user_id}&order=id", anon_key, token)
+    if status != 200:
+        print(f"Export de la collection impossible ({status}) : {rows}")
+        return None
+    cards = []
+    for r in rows:
+        c = r.get("cards") or {}
+        cards.append({"titre": c.get("wikipedia_title"), "rarete": c.get("rarity"),
+                      "rarity_order": c.get("rarity_order") or 0, "shiny": r.get("is_shiny"),
+                      "atk": c.get("atk"), "def": c.get("def"), "url": c.get("wikipedia_url")})
+    cards.sort(key=lambda c: (-c["rarity_order"], c["titre"] or ""))
+    with (HERE / "collection.csv").open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=["rarete", "titre", "shiny", "atk", "def", "url"],
+                           extrasaction="ignore")
+        w.writeheader()
+        w.writerows(cards)
+    counts = {}
+    for c in cards:
+        counts[c["rarete"]] = counts.get(c["rarete"], 0) + 1
+    detail = ", ".join(f"{n} {r}" for r, n in sorted(counts.items(), key=lambda x: -x[1]))
+    line = f"Collection : {len(cards)} cartes ({detail})."
+    print(line)
+    return line
+
+
 def write_summary(opened_cards, status_line):
     # Tableau affiche sur la page du run GitHub Actions.
     path = os.environ.get("GITHUB_STEP_SUMMARY")
@@ -154,7 +210,8 @@ def write_summary(opened_cards, status_line):
 def open_packs():
     sess = load_session()
     check_gh_secret_access()
-    cookie = auth_cookie(refresh(sess))
+    session_data = refresh(sess)
+    cookie = auth_cookie(session_data)
     headers = {"Cookie": cookie, "User-Agent": UA, "Origin": SITE, "Referer": f"{SITE}/pulls",
                "Accept": "*/*"}
     opened = 0
@@ -182,6 +239,9 @@ def open_packs():
             break
         time.sleep(1.5)
     print(f"{opened} paquet(s) ouvert(s).")
+    collection_line = export_collection(sess["anon_key"], session_data)
+    if collection_line:
+        status_line += "\n\n" + collection_line
     write_summary(opened_cards, status_line)
 
 

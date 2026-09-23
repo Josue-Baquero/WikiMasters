@@ -38,20 +38,21 @@ jobs:
 
       - name: Sauvegarder l'historique sur la branche data
         run: |
-          [ -f cards_log.csv ] || exit 0
-          cp cards_log.csv "$RUNNER_TEMP/cards_log.csv"
+          files=$(ls cards_log.csv collection.csv 2>/dev/null || true)
+          [ -n "$files" ] || exit 0
+          cp $files "$RUNNER_TEMP/"
           git config user.name "github-actions[bot]"
           git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
           if git rev-parse -q --verify origin/data >/dev/null; then
-            git checkout -q -B data origin/data
+            git checkout -q -f -B data origin/data
           else
             git checkout -q --orphan data
             git rm -rfq .
           fi
-          cp "$RUNNER_TEMP/cards_log.csv" cards_log.csv
-          git add -f cards_log.csv
+          for f in $files; do cp "$RUNNER_TEMP/$f" "$f"; done
+          git add -f $files
           if ! git diff --cached --quiet; then
-            git commit -qm "Nouvelles cartes"
+            git commit -qm "Mise a jour des cartes"
             git push -q origin data
           fi
 

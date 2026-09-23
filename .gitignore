@@ -2,3 +2,4 @@ session.json
 cards_log.csv
 *.har
 __pycache__/
+collection.csv
