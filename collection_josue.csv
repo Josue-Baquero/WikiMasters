@@ -5,10 +5,12 @@ UR,Roland Hayes,False,7555,4714,https://fr.wikipedia.org/wiki/Roland_Hayes
 SR,Michel Dodane,False,7219,5894,https://fr.wikipedia.org/wiki/Michel_Dodane
 SR,Richard Blass,False,5926,3186,https://fr.wikipedia.org/wiki/Richard_Blass
 SR,Sam Underwood,False,5727,3184,https://fr.wikipedia.org/wiki/Sam_Underwood
+SR,Thomas Buberl,False,5952,4959,https://fr.wikipedia.org/wiki/Thomas_Buberl
 R,Aire de Wernicke,False,4000,4352,https://fr.wikipedia.org/wiki/Aire_de_Wernicke
 R,Athlone,False,4531,3861,https://fr.wikipedia.org/wiki/Athlone
 R,Green Lantern (série télévisée d'animation),False,5017,4498,https://fr.wikipedia.org/wiki/Green_Lantern_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e_d%27animation)
 R,Histoire de la culture de l'hévéa,False,5819,7318,https://fr.wikipedia.org/wiki/Histoire_de_la_culture_de_l%27h%C3%A9v%C3%A9a
+R,Iméréthie,False,4965,4644,https://fr.wikipedia.org/wiki/Im%C3%A9r%C3%A9thie
 R,Kazunari Ninomiya,False,4885,2906,https://fr.wikipedia.org/wiki/Kazunari_Ninomiya
 R,Ketouba,False,4809,5418,https://fr.wikipedia.org/wiki/Ketouba
 R,Le Protecteur (série télévisée),False,4771,3154,https://fr.wikipedia.org/wiki/Le_Protecteur_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)
@@ -32,6 +34,7 @@ PC,Forcado,False,3122,3821,https://fr.wikipedia.org/wiki/Forcado
 PC,Foyer socio-éducatif,False,2816,2045,https://fr.wikipedia.org/wiki/Foyer_socio-%C3%A9ducatif
 PC,"Gauguin, le loup dans le soleil",False,2773,2235,"https://fr.wikipedia.org/wiki/Gauguin,_le_loup_dans_le_soleil"
 PC,Gaye Su Akyol,False,2924,4176,https://fr.wikipedia.org/wiki/Gaye_Su_Akyol
+PC,Guy Simonds,False,3098,2633,https://fr.wikipedia.org/wiki/Guy_Simonds
 PC,Hans Steinbichler,False,2871,2065,https://fr.wikipedia.org/wiki/Hans_Steinbichler
 PC,Hitman pro,False,2795,779,https://fr.wikipedia.org/wiki/Hitman_pro
 PC,Hommes,False,3555,6870,https://fr.wikipedia.org/wiki/Hommes
@@ -41,6 +44,7 @@ PC,Le Diable noir,False,2558,3332,https://fr.wikipedia.org/wiki/Le_Diable_noir
 PC,Liefmans (bière),False,3017,3599,https://fr.wikipedia.org/wiki/Liefmans_(bi%C3%A8re)
 PC,Liste des pièces commémoratives de 2 euros de 2011,False,3448,5706,https://fr.wikipedia.org/wiki/Liste_des_pi%C3%A8ces_comm%C3%A9moratives_de_2_euros_de_2011
 PC,Love (album des Beatles),False,3400,3986,https://fr.wikipedia.org/wiki/Love_(album_des_Beatles)
+PC,Mari Trini,False,3107,2048,https://fr.wikipedia.org/wiki/Mari_Trini
 PC,Marius Ernest Sabino,False,3225,4607,https://fr.wikipedia.org/wiki/Marius_Ernest_Sabino
 PC,Nathan Tella,False,3197,4104,https://fr.wikipedia.org/wiki/Nathan_Tella
 PC,Nédélec,False,3113,3986,https://fr.wikipedia.org/wiki/N%C3%A9d%C3%A9lec
@@ -54,6 +58,7 @@ C,(26363) 1999 AG6,False,1817,4741,https://fr.wikipedia.org/wiki/(26363)_1999_AG
 C,(27749) Tsukadaken,False,1861,4846,https://fr.wikipedia.org/wiki/(27749)_Tsukadaken
 C,(305287) Olegyankov,False,1761,4567,https://fr.wikipedia.org/wiki/(305287)_Olegyankov
 C,(32244) 2000 OK43,False,1860,4826,https://fr.wikipedia.org/wiki/(32244)_2000_OK43
+C,(7750) McEwen,False,1763,4569,https://fr.wikipedia.org/wiki/(7750)_McEwen
 C,1968 en philosophie,False,1697,2623,https://fr.wikipedia.org/wiki/1968_en_philosophie
 C,Aden Meinel,False,1863,1990,https://fr.wikipedia.org/wiki/Aden_Meinel
 C,Administration photo-cinématographique panukrainienne,False,1899,3204,https://fr.wikipedia.org/wiki/Administration_photo-cin%C3%A9matographique_panukrainienne
@@ -100,6 +105,7 @@ C,Liste des diffuseurs des Jeux olympiques d'hiver de 2014,False,2118,4863,https
 C,Liste des gminy de Podlachie,False,2182,2055,https://fr.wikipedia.org/wiki/Liste_des_gminy_de_Podlachie
 C,Ludibrium,False,1484,617,https://fr.wikipedia.org/wiki/Ludibrium
 C,Luge aux Jeux olympiques de 1994,False,1663,1228,https://fr.wikipedia.org/wiki/Luge_aux_Jeux_olympiques_de_1994
+C,"Madame (film, 2019)",False,1694,3121,"https://fr.wikipedia.org/wiki/Madame_(film,_2019)"
 C,Marco Crimi,False,1901,3224,https://fr.wikipedia.org/wiki/Marco_Crimi
 C,Martigné (homonymie),False,1437,1083,https://fr.wikipedia.org/wiki/Martign%C3%A9_(homonymie)
 C,Martin Kellerman,False,1610,1930,https://fr.wikipedia.org/wiki/Martin_Kellerman
@@ -118,14 +124,17 @@ C,Nova Veneza (Santa Catarina),False,1826,3799,https://fr.wikipedia.org/wiki/Nov
 C,Nuri (lanceur spatial),False,2257,6503,https://fr.wikipedia.org/wiki/Nuri_(lanceur_spatial)
 C,Oblewo,False,1604,1337,https://fr.wikipedia.org/wiki/Oblewo
 C,Olethreutini,False,1673,2915,https://fr.wikipedia.org/wiki/Olethreutini
+C,Olivia Lomenech Gill,False,1965,5181,https://fr.wikipedia.org/wiki/Olivia_Lomenech_Gill
 C,Outsourced (série télévisée),False,1962,4289,https://fr.wikipedia.org/wiki/Outsourced_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)
 C,PRIMES,False,2029,3599,https://fr.wikipedia.org/wiki/PRIMES
 C,Partners of the Trail,False,1720,1373,https://fr.wikipedia.org/wiki/Partners_of_the_Trail
 C,Petropedetes perreti,False,1669,3407,https://fr.wikipedia.org/wiki/Petropedetes_perreti
+C,Portrait d'un tueur,False,1655,2984,https://fr.wikipedia.org/wiki/Portrait_d%27un_tueur
 C,Porva,False,1537,3339,https://fr.wikipedia.org/wiki/Porva
 C,Pseudoterpna,False,1630,2391,https://fr.wikipedia.org/wiki/Pseudoterpna
 C,RV Kaimei,False,1919,2841,https://fr.wikipedia.org/wiki/RV_Kaimei
 C,Radio Tunisie Culture,False,1899,3689,https://fr.wikipedia.org/wiki/Radio_Tunisie_Culture
+C,Raszewy (Jarocin),False,1741,2944,https://fr.wikipedia.org/wiki/Raszewy_(Jarocin)
 C,Raïon Sovietski (Tcheliabinsk),False,2044,5288,https://fr.wikipedia.org/wiki/Ra%C3%AFon_Sovietski_(Tcheliabinsk)
 C,Rendu volumique direct,False,1921,4352,https://fr.wikipedia.org/wiki/Rendu_volumique_direct
 C,Rent (chanson),False,1672,1944,https://fr.wikipedia.org/wiki/Rent_(chanson)
@@ -164,6 +173,7 @@ C,Yamandu,False,1555,982,https://fr.wikipedia.org/wiki/Yamandu
 C,Yūko Mori,False,2090,5239,https://fr.wikipedia.org/wiki/Y%C5%ABko_Mori
 C,Zaboukh,False,1928,4389,https://fr.wikipedia.org/wiki/Zaboukh
 C,Ère Gentoku,False,1769,2989,https://fr.wikipedia.org/wiki/%C3%88re_Gentoku
+C,Édouard Gérard,False,1571,4375,https://fr.wikipedia.org/wiki/%C3%89douard_G%C3%A9rard
 C,Élections municipales de 2017 en Estrie,False,1732,2530,https://fr.wikipedia.org/wiki/%C3%89lections_municipales_de_2017_en_Estrie
 C,Éruption du Huaynaputina en 1600,False,1714,1062,https://fr.wikipedia.org/wiki/%C3%89ruption_du_Huaynaputina_en_1600
 C,Éternité (album),False,1851,3940,https://fr.wikipedia.org/wiki/%C3%89ternit%C3%A9_(album)
